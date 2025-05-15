@@ -523,7 +523,8 @@ input:focus {
     /* margin-left: 1rem; */
     margin: auto;
 }
-.column a{
+
+.column a {
     text-align: center;
 }
 
@@ -699,7 +700,8 @@ input:focus {
     border: 1px solid red;
     font-size: 16px;
     font-weight: bold;
-     color: #444;;
+    color: #444;
+    ;
     background-color: #fff;
 }
 
@@ -963,7 +965,21 @@ input:focus {
     }
 
     .conjection-froud {
-        display: none;
+        width: 100% !important;
+        margin-left: 0 !important;
     }
 
+    .col-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .col-md-3.conjection-froud h1 {
+        font-size: 1.2rem;
+    }
+
+    .col-md-3.conjection-froud img {
+        width: 100%;
+        margin-top: 12px;
+    }
 }
