@@ -558,7 +558,7 @@ input:focus {
     height: 370px;
     overflow-y: auto;
     /* Corrected background image URL with encoded spaces and commas */
-    background: url("/imges/Screenshot\ \(156\).png") no-repeat center center;
+    background: url("imges/Screenshot\ \(156\).png") no-repeat center center;
     background-size: cover;
     position: relative;
     z-index: 0;
