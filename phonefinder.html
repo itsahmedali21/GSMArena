@@ -85,7 +85,7 @@
                     <a href="/rewies.html" class="nav-link">Reviews</a>
                     <a href="/videos.html" class="nav-link">Videos</a>
                     <a href="/featured.html" class="nav-link">Featured</a>
-                    <a href="#" class="nav-link">Phone Finder</a>
+                    <a href="phonefinder.html" class="nav-link">Phone Finder</a>
                     <a href="#" class="nav-link">Deals</a>
                     <a href="#" class="nav-link">Merch</a>
                     <a href="#" class="nav-link">Coverage</a>
@@ -128,7 +128,7 @@
             <a href="/rewies.html">Reviews</a>
             <a href="/videos.html">Videos</a>
             <a href="/featured.html">Featured</a>
-            <a href="#">Rumor Mill</a>
+            <a href="phonefinder.html">Phone Finder</a>
             <a href="#">Glossary</a>
             <a href="#">Coverage</a>
             <a href="#">Contact Us</a>
@@ -206,11 +206,11 @@
                     <i class="fa-solid fa-volume-high fa-sm"></i>
                     Remor Mill</button>
             </div>
-            <div class="col-md-8 col-5  d-md-inline col-12 ">
+            <div class="col-md-8 col-5  d-md-inline  ">
                 <div class="comfort-life position-absolute">
                     <img class="w-100 h-100" src="imges/magnifient sectton.jpeg"
                         style="background-repeat: no-repeat; background-size: cover;" alt="">
-                 
+
                 </div>
 
             </div>
@@ -218,6 +218,402 @@
 
     </div>
 
+    <div class="container bg-white mt-3">
+        <div class="row">
+            <div class="col-lg-6 col-12">
+                <div class="filter-header">General</div>
+                <div class="filter-container container">
+                    <button style="border-radius: 1px;" class="border-secondary btn btn-toggle w-100 text-start mb-3"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#brandCollapse" aria-expanded="false"
+                        aria-controls="brandCollapse">
+                        Brand
+                    </button>
+                    <div class="collapse" id="brandCollapse">
+                        <div class="card card-body py-2 px-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Apple" id="brandApple"
+                                    name="brand" />
+                                <label class="form-check-label" for="brandApple">Apple</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Samsung" id="brandSamsung"
+                                    name="brand" />
+                                <label class="form-check-label" for="brandSamsung">Samsung</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Xiaomi" id="brandXiaomi"
+                                    name="brand" />
+                                <label class="form-check-label" for="brandXiaomi">Xiaomi</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Lenovo" id="brandLenovo"
+                                    name="brand" />
+                                <label class="form-check-label" for="brandLenovo">Lenovo</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="border-secondary btn btn-toggle w-100 text-start mb-3" type="button"
+                        data-bs-toggle="collapse" style="border-radius: 1px;" data-bs-target="#networkCollapse"
+                        aria-expanded="false" aria-controls="networkCollapse">
+                        Availbility
+                    </button>
+                    <div class="collapse" id="networkCollapse">
+                        <div class="card card-body py-2 px-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Wi-Fi Only" id="networkWifi"
+                                    name="network" />
+                                <label class="form-check-label" for="networkWifi">Available</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="4G" id="network4G"
+                                    name="network" />
+                                <label class="form-check-label" for="network4G">Coming Soon</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="5G" id="network5G"
+                                    name="network" />
+                                <label class="form-check-label" for="network5G">Discontinued</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="5G" id="network5G2"
+                                    name="network" />
+                                <label class="form-check-label" for="network5G2">Rumored</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-header mx-1 mb-2">Sim</div>
+                    <div class="row g-2">
+                        <div class="col-6">
+                            <button class="border-secondary btn btn-toggle w-100 text-start" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#simCollapse" aria-expanded="false"
+                                aria-controls="simCollapse" style="border-radius: 1px;">
+                                2G
+                            </button>
+                            <div class="collapse" id="simCollapse">
+                                <div class="card card-body px-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="GSM 850" id="gsm850"
+                                            name="networkBand" />
+                                        <label class="form-check-label" for="gsm850">GSM 850</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="GSM 900" id="gsm900"
+                                            name="networkBand" />
+                                        <label class="form-check-label" for="gsm900">GSM 900</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="GSM 1800" id="gsm1800"
+                                            name="networkBand" />
+                                        <label class="form-check-label" for="gsm1800">GSM 1800</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="GSM 1900" id="gsm1900"
+                                            name="networkBand" />
+                                        <label class="form-check-label" for="gsm1900">GSM 1900</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <button class="border-secondary btn btn-toggle w-100 text-start mb-3" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#simwasCollapse" aria-expanded="false"
+                                aria-controls="simwasCollapse" style="border-radius: 1px;">
+                                3G
+                            </button>
+                            <div class="collapse" id="simwasCollapse">
+                                <div class="card card-body py-2 px-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="HSPA 850" id="hspa850"
+                                            name="networkBand" />
+                                        <label class="form-check-label" for="hspa850">HSPA 850</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="HSPA 900" id="hspa900"
+                                            name="networkBand" />
+                                        <label class="form-check-label" for="hspa900">HSPA 900</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="HSPA 1700" id="hspa1700"
+                                            name="networkBand" />
+                                        <label class="form-check-label" for="hspa1700">HSPA 1700</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="HSPA 1900" id="hspa1900"
+                                            name="networkBand" />
+                                        <label class="form-check-label" for="hspa1900">HSPA 1900</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="HSPA 2100" id="hspa2100"
+                                            name="networkBand" />
+                                        <label class="form-check-label" for="hspa2100">HSPA 2100</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                            <label class="btn border-dark w-100 text-start mb-0 fw-bolder" style="border-radius: 1px;">
+                                <input type="checkbox" class="form-check-input me-2 float-end"> DUAL SIM
+                            </label>
+                        </div>
+                        <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                            <label class="btn border-dark w-100 text-start mb-0 fw-bolder" style="border-radius: 1px;">
+                                <input type="checkbox" class="form-check-input me-2 float-end"> ESIM
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter-header mx-1 mb-3">BODY</div>
+                    <button style="border-radius: 1px;" class="border-secondary btn btn-toggle w-100 text-start"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#factorCollapse" aria-expanded="false"
+                        aria-controls="factorCollapse">
+                        From Factor
+                    </button>
+                    <div class="collapse" id="factorCollapse">
+                        <div class="card card-body px-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Mini-SIM" id="miniSim"
+                                    name="size" />
+                                <label class="form-check-label" for="miniSim">Bar</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Nano-SIM" id="nanoSim"
+                                    name="size" />
+                                <label class="form-check-label" for="nanoSim">Flip up</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Micro-SIM" id="microSim"
+                                    name="size" />
+                                <label class="form-check-label" for="microSim">Flip down</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Micro-SIM" id="microSim"
+                                    name="size" />
+                                <label class="form-check-label" for="microSim">Swivel</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Micro-SIM" id="microSim"
+                                    name="size" />
+                                <label class="form-check-label" for="microSim">Slide</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex fw-bolder align-items-center gap-3 mt-2"
+                        style="border: 1px solid; padding: 7px; margin-top: 14px;">
+                        Height: <span id="yearValue">min</span>
+                        <input type="range" class="form-range custom-range flex-grow-1" min="2000" max="2025"
+                            id="rangeYear">
+                        <span class="text-muted">max</span>
+                    </div>
+                    <div class="d-flex fw-bolder align-items-center gap-3 mt-2"
+                        style="border: 1px solid; padding: 7px; margin-top: 14px;">
+                        Thinkness: <span id="yearValue">min</span>
+                        <input type="range" class="form-range custom-range flex-grow-1" min="2000" max="2025"
+                            id="rangeYear">
+                        <span class="text-muted">max</span>
+                    </div>
+                    <button style="border-radius: 1px;" class="border-secondary btn btn-toggle w-100 mt-2 text-start"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#ipCollapse" aria-expanded="false"
+                        aria-controls="ipCollapse">
+                        IP CERTIFICATE
+                    </button>
+                    <div class="collapse" id="ipCollapse">
+                        <div class="card card-body px-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Mini-SIM" id="miniSim"
+                                    name="size" />
+                                <label class="form-check-label" for="miniSim"> MIL-STD-810F</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Mini-SIM" id="miniSim"
+                                    name="size" />
+                                <label class="form-check-label" for="miniSim">MIL-STD-810D</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Nano-SIM" id="nanoSim"
+                                    name="size" />
+                                <label class="form-check-label" for="nanoSim">MIL-STD-810H</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Nano-SIM" id="nanoSim"
+                                    name="size" />
+                                <label class="form-check-label" for="nanoSim"> MIL-STD-810G </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-12 pt-4">
+                <div class="d-flex fw-bolder align-items-center gap-3 mt-4"
+                    style="border: 1px solid; padding: 7px; margin-top: 14px;">
+                    Year: <span id="yearValue">2000</span>
+                    <input type="range" class="form-range custom-range flex-grow-1" min="2000" max="2025" id="rangeYear"
+                        oninput="yearValue.innerText = this.value">
+                    <span class="text-muted">2025</span>
+                </div>
+                <div class="custom-slider-box fw-bolder mb-3">
+                    <label for="priceRange">Price:</label>
+                    <span class="value-display" id="priceValue">20000</span>
+                    <input type="range" min="20000" max="200000" step="100" id="priceRange"
+                        oninput="priceValue.innerText = this.value">
+                    <span class="end-label">PKR</span>
+                </div>
+
+                <div class="row g-2 mt-5">
+                    <div class="col-6 mt-3">
+                        <button class="border-secondary btn btn-toggle w-100 text-start" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#fourGCollapse" aria-expanded="false"
+                            aria-controls="fourGCollapse" style="border-radius: 1px;">
+                            4G
+                        </button>
+                        <div class="collapse" id="fourGCollapse">
+                            <div class="card card-body px-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="LTE 700" id="lte700"
+                                        name="networkBand" />
+                                    <label class="form-check-label" for="lte700">LTE 700</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="LTE 850" id="lte850"
+                                        name="networkBand" />
+                                    <label class="form-check-label" for="lte850">LTE 850</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="LTE 900" id="lte900"
+                                        name="networkBand" />
+                                    <label class="form-check-label" for="lte900">LTE 900</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="LTE 1800" id="lte1800"
+                                        name="networkBand" />
+                                    <label class="form-check-label" for="lte1800">LTE 1800</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 mt-3">
+                        <button class="border-secondary btn btn-toggle w-100 text-start mb-3" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#fiveGCollapse" aria-expanded="false"
+                            aria-controls="fiveGCollapse" style="border-radius: 1px;">
+                            5G
+                        </button>
+                        <div class="collapse" id="fiveGCollapse">
+                            <div class="card card-body px-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="NR 3500" id="nr3500"
+                                        name="networkBand" />
+                                    <label class="form-check-label" for="nr3500">NR 3500</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="NR 3600" id="nr3600"
+                                        name="networkBand" />
+                                    <label class="form-check-label" for="nr3600">NR 3600</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="NR 3700" id="nr3700"
+                                        name="networkBand" />
+                                    <label class="form-check-label" for="nr3700">NR 3700</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="NR 3800" id="nr3800"
+                                        name="networkBand" />
+                                    <label class="form-check-label" for="nr3800">NR 3800</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button style="border-radius: 1px;" class="border-secondary btn btn-toggle w-100 text-start"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#sizeCollapse" aria-expanded="false"
+                    aria-controls="sizeCollapse">
+                    SIZE
+                </button>
+                <div class="collapse" id="sizeCollapse">
+                    <div class="card card-body px-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Mini-SIM" id="miniSim" name="size" />
+                            <label class="form-check-label" for="miniSim">Mini-SIM (regular size)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Nano-SIM" id="nanoSim" name="size" />
+                            <label class="form-check-label" for="nanoSim">Nano-SIM</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Micro-SIM" id="microSim"
+                                name="size" />
+                            <label class="form-check-label" for="microSim">Micro-SIM</label>
+                        </div>
+                    </div>
+                </div>
+
+                <button style="border-radius: 1px;" class="border-secondary btn btn-toggle w-100 mt-5 text-start"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#KeyWordsCollapse" aria-expanded="false"
+                    aria-controls="KeyWordsCollapse">
+                    KeyWords
+                </button>
+                <div class="collapse" id="KeyWordsCollapse">
+                    <div class="card card-body px-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Mini-SIM" id="miniSim" name="size" />
+                            <label class="form-check-label" for="miniSim"> Without QWERTY</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Nano-SIM" id="nanoSim" name="size" />
+                            <label class="form-check-label" for="nanoSim">With QWERTY</label>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="d-flex align-items-center gap-3 mt-2"
+                    style="border: 1px solid; padding: 7px; margin-top: 14px;">
+                    Width: <span id="yearValue">min</span>
+                    <input type="range" class="form-range custom-range flex-grow-1" min="2000" max="2025"
+                        id="rangeYear">
+                    <span class="text-muted">max</span>
+                </div>
+                <div class="d-flex align-items-center gap-3 mt-2"
+                    style="border: 1px solid; padding: 7px; margin-top: 14px;">
+                    Weight: <span id="yearValue">min</span>
+                    <input type="range" class="form-range custom-range flex-grow-1" min="2000" max="2025"
+                        id="rangeYear">
+                    <span class="text-muted">max</span>
+                </div>
+                <button style="border-radius: 1px;" class="border-secondary btn btn-toggle w-100 mt-2 text-start"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#colorCollapse" aria-expanded="false"
+                    aria-controls="colorCollapse">
+                    Color
+                </button>
+                <div class="collapse" id="colorCollapse">
+                    <div class="card card-body px-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Mini-SIM" id="miniSim" name="size" />
+                            <label class="form-check-label" for="miniSim"> RED</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Mini-SIM" id="miniSim" name="size" />
+                            <label class="form-check-label" for="miniSim">WHITE</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Nano-SIM" id="nanoSim" name="size" />
+                            <label class="form-check-label" for="nanoSim">BLACK</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Nano-SIM" id="nanoSim" name="size" />
+                            <label class="form-check-label" for="nanoSim">BLUE</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 

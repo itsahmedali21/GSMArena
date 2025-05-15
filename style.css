@@ -520,7 +520,8 @@ input:focus {
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     margin-top: 10px;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
+    margin: auto;
 }
 
 .brand-grid a {
@@ -530,6 +531,7 @@ input:focus {
     text-align: center;
     border-radius: 5px;
     font-size: 14px;
+    width: auto;
     text-decoration: none;
 }
 
@@ -660,6 +662,115 @@ input:focus {
     margin-right: 5px;
 }
 
+.filter-container {
+    padding: 15px;
+}
+
+.filter-header {
+    margin-left: 17PX;
+    font: 300 20px Google-Oswald, sans-serif;
+    margin-top: 12px;
+    color: rgb(252, 45, 45);
+}
+
+.form-check-label {
+    cursor: pointer;
+}
+
+.form-check-label:hover {
+    text-decoration: underline;
+}
+
+.btn-toggle::after {
+    content: "▼";
+    float: right;
+    font-size: 12px;
+    transition: transform 0.3s;
+}
+
+.btn-toggle[aria-expanded="true"]::after {
+    transform: rotate(-180deg);
+}
+
+.btn-toggle {
+    border: 1px solid red;
+    font-size: 16px;
+    font-weight: bold;
+     color: #444;;
+    background-color: #fff;
+}
+
+.btn-toggle[aria-expanded="true"] {
+    border-color: black !important;
+}
+
+.custom-range::-webkit-slider-runnable-track {
+    background-color: #DAADA8;
+    height: 6px;
+    border-radius: 5px;
+}
+
+.custom-range::-moz-range-track {
+    background-color: #DAADA8;
+    height: 6px;
+    border-radius: 5px;
+}
+
+.custom-range::-ms-track {
+    background-color: #DAADA8;
+    height: 6px;
+}
+
+.custom-slider-box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 6px 15px;
+    margin-top: 14px;
+    border: 1px solid;
+    border-radius: 1px;
+    position: relative;
+    z-index: 2999;
+}
+
+.custom-slider-box label {
+    font-weight: 600;
+    margin-right: 5px;
+    white-space: nowrap;
+    color: #3a2f2f;
+}
+
+.custom-slider-box input[type="range"] {
+    flex-grow: 1;
+    min-width: 150px;
+    -webkit-appearance: none;
+    height: 6px;
+    background: #c39ea0;
+    margin: 0 1px;
+}
+
+.custom-slider-box input[type="range"]::-moz-range-track {
+    background: #c39ea0;
+    height: 6px;
+    border-radius: 5px;
+}
+
+.value-display {
+    font-weight: 400;
+    color: #444444;
+    margin-left: 0px;
+}
+
+.end-label {
+    letter-spacing: -1PX;
+    color: #5b4a4a;
+    font-size: 14px;
+}
+
+#yearValue,
+.text-muted {
+    font-size: 12px;
+}
 
 @media (max-width:1200px) {
     .volunteer {
@@ -819,7 +930,7 @@ input:focus {
     }
 
     .bobile img {
-        width: 440px;
+        width: 100%;
     }
 
     .content p {
