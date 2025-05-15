@@ -665,6 +665,14 @@ input:focus {
     .volunteer {
         width: 500px;
     }
+
+    .col-5 {
+        display: none;
+    }
+
+    .comfort-life-zone {
+        display: none;
+    }
 }
 
 @media (max-width: 991.98px) {
