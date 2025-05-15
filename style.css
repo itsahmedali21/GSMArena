@@ -1,0 +1,850 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Caveat:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Caveat:wght@400..700&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5.h5,
+p,
+span {
+    text-transform: Uppercase;
+}
+
+.main-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.const {
+    background-color: #6D6D6D;
+    max-width: 1082px;
+    margin-top: -8px;
+    overflow-x: visible;
+    white-space: nowrap;
+
+}
+
+.container {
+    /* position: relative; */
+    max-width: 1082px;
+    /* z-index: 19; */
+}
+
+.navbar {
+    background-color: #9E9E9E;
+    height: 60px;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-toggler {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22' /%3E%3C/svg%3E");
+    font-size: 20px;
+    color: white;
+}
+
+
+/* Left Menu - Initially hidden */
+#leftMenu {
+    display: none;
+    background-color: #E0E0E0;
+    padding: 20px;
+    width: 100%;
+    position: absolute;
+    top: 56px;
+    /* Directly below navbar */
+    /* left: 0; */
+    z-index: 999;
+}
+
+.nav-link {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.icon-container {
+    display: flex;
+    gap: 2px;
+
+}
+
+.icon-container .btn {
+    padding: 6px 8px;
+    margin: 0;
+    border-radius: 5px;
+}
+
+/* Optional: Removes the border on the input field */
+.no-focus-border:focus {
+    outline: none;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    margin: 0;
+}
+
+/* Search Input */
+
+::placeholder {
+    color: white;
+}
+
+
+/* Initial state of the SVG icon */
+.btn i {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover i {
+    background-color: #D50000;
+    transform: translateY(3px);
+    padding: 3px 3px 3px 3px;
+    padding-top: 17px;
+    width: 32px;
+    height: 30px;
+}
+
+.central {
+    max-width: 340px;
+    background-color: #9E9E9E;
+    width: 100%;
+    padding: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input {
+    background: transparent;
+    border: none;
+    border-left: 1ps solid black;
+    width: 290px;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+.controvecy {
+    margin-left: 12px;
+}
+
+.support {
+    margin-top: 3.8rem;
+}
+
+.support .col-md-4 .solid {
+    margin-left: -12px;
+    background-color: #BBBBBB;
+    color: white;
+    font-size: 21px;
+    letter-spacing: -1px;
+    border: none;
+    padding: 5px 22px;
+}
+
+.support .col-md-4 .solid:hover {
+    background-color: #D50000;
+}
+
+.devor {
+    margin-left: 0;
+}
+
+.devor button {
+    border: none;
+    margin-left: -11px;
+    font-size: 15px;
+    font-weight: 500;
+    width: 90px;
+    text-align: center;
+    color: #828383;
+}
+
+.devor button:hover {
+    background-color: #D50000;
+    color: white;
+}
+
+#leftMenu {
+    display: none;
+    background-color: #E0E0E0;
+    padding: 20px;
+    width: 100%;
+    position: sticky;
+    z-index: 9999;
+}
+
+
+#leftMenu.show {
+    display: block;
+}
+
+
+#content-wrapper {
+    transition: margin-top 0.3s ease;
+}
+
+#content-wrapper.menu-open {
+    margin-top: 200px;
+}
+
+.bobile {
+    position: relative;
+    max-width: 100%;
+    margin-left: -23px;
+}
+
+.bobile img {
+    width: -webkit-fill-available;
+    height: 366px;
+}
+
+.conjection {
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    user-select: none;
+}
+
+.col-md-3.conjection-froud {
+    margin-left: -38px;
+    margin-top: 2px;
+}
+
+.col-md-3.conjection-froud img {
+    width: 323px;
+    height: 172px;
+}
+
+.col-md-3.conjection-froud h1,
+.froud h1 {
+    bottom: 72px;
+    left: 12px;
+    margin: 0;
+    height: 20px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    max-width: 90%;
+    position: relative;
+    user-select: none;
+}
+
+.comfort {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.support .col-4 .solid:hover {
+    background-color: #D50000;
+}
+
+.comfort h1 {
+    background: dotted;
+    border: 1px solid do;
+    position: absolute;
+    bottom: 45px;
+    left: 12px;
+    margin: 0;
+    color: white;
+    font-size: 1.9rem;
+}
+
+.wanted img {
+    margin-left: -23px;
+    width: 403px;
+    height: 278px;
+}
+
+.froud {
+    margin-left: -31px;
+}
+
+.froud img {
+    width: 295px;
+    margin-left: -8px;
+    height: 140px;
+}
+
+.cent {
+    height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.shrink {
+
+    width: 85%;
+    height: 98px;
+    margin-top: 10px;
+}
+
+.canel p {
+    max-width: 66px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.wrapper {
+    background-color: #EEEEEE;
+    /* margin-top: -3rem; */
+}
+
+.rena {
+    padding: 20px;
+    border-left: 15px solid teal;
+    border-radius: 5px;
+    border-bottom: 1px solid grey;
+    height: 90px;
+    margin: 20px 0;
+}
+
+.warently {
+    font-size: 2.0rem;
+    letter-spacing: -1px;
+    color: #777777;
+    margin-bottom: 5px;
+}
+
+.wrapper p {
+    font-size: 18px;
+    color: #7c7777;
+    margin: 0;
+}
+
+.wrapper p:hover {
+    color: #D50000;
+}
+
+.warently:hover {
+    color: #D50000;
+}
+
+.fa-bell:hover {
+    color: teal;
+    transition: color 0.3s;
+}
+
+
+.content {
+    flex: 1;
+}
+
+.content p {
+    font-size: 1.25rem;
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+.content span {
+    font-size: 1rem;
+    color: #555;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: 140px;
+}
+
+.highlight-12 {
+    background-color: #E8EFF6;
+}
+
+.canel h6 {
+    font-size: 14px;
+    font-weight: 800;
+    margin-left: 0px;
+    margin-top: 7px;
+}
+
+.custom-table {
+    border: none;
+}
+
+.custom-table th,
+.custom-table td {
+    border: none !important;
+    height: 20px;
+    font-size: 13px;
+    vertical-align: middle;
+    padding: 2px 8px;
+}
+
+.custom-table tbody tr.highlight {
+    background-color: #E8F6E9;
+    border: none;
+}
+
+.wanted-12 {
+    font-size: 11px;
+    line-height: 15px;
+    margin-left: 11px;
+    opacity: 0.97;
+    margin-top: -4px;
+    color: #000000cf;
+}
+
+.volunteer {
+    width: 678px;
+}
+
+.src {
+    display: block;
+    margin-top: 42px;
+    margin-left: -109px;
+}
+
+.src {
+    margin-left: 0 !important;
+    /* position: sticky; */
+    top: 0;
+    position: fixed;
+    /* Unwanted left margin ko remove karne ke liye */
+}
+
+.color {
+    padding: 0.5rem 1.5rem;
+    float: inline-end;
+    margin: 0.5rem;
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    user-select: none;
+}
+
+.nav-container a {
+    margin-left: 11px;
+    color: black;
+    font-size: 12.3px;
+    padding-top: 43px;
+    text-decoration: none;
+}
+
+.mobile-navbar {
+    background-color: #222;
+    padding: 10px 15px;
+    color: white;
+}
+
+.mobile-navbar .logo {
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.mobile-menu {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+}
+
+.mobile-menu a {
+    display: block;
+    padding: 8px 0;
+    color: white;
+    width: 111px;
+    text-decoration: none;
+    border-bottom: 1px solid #444;
+}
+
+.mobile-menu a:hover {
+    background-color: #444;
+}
+
+.menu-icons {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    font-size: 20px;
+    border-bottom: 1px solid #444;
+}
+
+.brand-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: 1rem;
+}
+
+.brand-grid a {
+    color: white;
+    background-color: #555;
+    padding: 6px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.column {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+}
+
+.brand-grid a:hover {
+    background-color: #666;
+}
+
+.menu-buttons {
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.sentizer-er {
+    border-right: 0.11px solid #7a7474;
+}
+
+.comfort-life {
+    width: 720px;
+    height: 370px;
+    overflow-y: auto;
+    /* Corrected background image URL with encoded spaces and commas */
+    background: url("/imges/Screenshot\ \(156\).png") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    margin-left: -12px;
+    color: white;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.comfort-life-zone img {
+    height: 362px;
+    width: 720px;
+    margin-left: -12px;
+    background-size: cover;
+    z-index: 0;
+    /* border-radius: 10px; */
+    color: white;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.mobiles-button {
+    color: #5f5b5b;
+    font-weight: 700;
+    border: none;
+    padding: 1px 12px;
+    margin-left: 5px;
+    background-color: #DEDBD4;
+    font-size: 13px;
+    height: 22px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.mobiles-button:hover {
+    background-color: #d50000;
+    color: white;
+}
+
+.comon {
+    position: absolute;
+    bottom: 7px;
+}
+
+.common {
+    bottom: 72px;
+    left: 12px;
+    margin: 0;
+    height: 20px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    max-width: 90%;
+    position: relative;
+}
+
+.review-card {
+    background-color: #fff;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin-bottom: 14px;
+    width: 350px;
+}
+
+.review-card:hover {
+    transform: translateY(-4px);
+}
+
+.review-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.review-card-body {
+    padding: 16px 20px;
+}
+
+.review-card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.review-card-meta {
+    font-size: 0.9rem;
+    color: #666;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review-card-meta i {
+    color: #ff4d4d;
+    margin-right: 5px;
+}
+
+
+@media (max-width:1200px) {
+    .volunteer {
+        width: 500px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .desktop-navbar {
+        display: none;
+    }
+
+    #leftMenu {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .central input {
+        display: none;
+    }
+
+    .warently {
+        font-size: 1rem;
+    }
+
+    .comfort-life-zone img {
+        width: 380px;
+    }
+
+    .war .col-lg-4 {
+        width: 90%;
+    }
+
+    .sentizer-er iframe {
+        width: 100%;
+    }
+
+    .wanted {
+        margin-left: -9rem;
+    }
+
+    .color {
+        padding: 10px;
+    }
+
+    .col-5 {
+        display: none;
+    }
+
+    .volunteer {
+        width: 436px;
+    }
+
+    .col-3.conjection-froud {
+        margin-left: 1px;
+        margin-top: 2px;
+    }
+
+    .sentizer-er {
+        border: none;
+    }
+
+    .main-wrapper {
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .wanted img {
+        margin-left: -15px;
+        width: 436px;
+        height: 278px;
+    }
+
+    .navbar {
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    #leftMenu.show {
+        position: fixed;
+        /* top: 0; */
+        height: 76px;
+        /* margin-top: 37px; */
+    }
+
+    .bobile {
+        margin-left: 0;
+    }
+
+    #leftMenu.show a {
+        font-size: 11px;
+        margin-left: 12px;
+        display: contents;
+    }
+
+    .support .content-wrapper {
+        display: inline-block;
+        width: auto;
+    }
+
+    .support .row {
+        display: inline-flex;
+        flex-wrap: nowrap;
+    }
+
+    .devor {
+        width: 590px;
+    }
+
+    .devor button {
+        width: 130px;
+    }
+
+    .support .col-4,
+    .support .col-5,
+    .support .col-3 {
+        flex: 0 0 auto;
+        width: auto;
+    }
+
+    .comfort {
+        display: inline-block;
+        min-width: 300px;
+    }
+
+    .comfort-zone-highfi {
+        min-width: 900px;
+    }
+
+    .col-4 .solid {
+        max-width: 200px;
+    }
+
+    .rena {
+        width: 461px;
+        background: #EEEEEE;
+    }
+
+    .center {
+        /* width: 300px; */
+        height: 364px;
+        overflow-y: scroll;
+    }
+
+    .cent {
+        margin-top: 12px;
+    }
+
+    .cent h5 {
+        margin-top: 12px;
+    }
+
+    .bobile img {
+        width: 440px;
+    }
+
+    .content p {
+        font-size: 0.75rem;
+        margin: 0;
+        max-width: 204px;
+        line-height: 17px;
+        margin-bottom: 12px;
+    }
+
+    .common .col-8 {
+        width: 443px;
+    }
+
+    .sentizer img {
+        width: 45px;
+        height: 60px;
+    }
+
+    .content span {
+        display: none;
+    }
+
+    .img-fluid {
+        max-width: 100%;
+        height: 85px;
+    }
+
+    .conjection-froud {
+        display: none;
+    }
+
+}
