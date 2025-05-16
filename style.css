@@ -324,8 +324,8 @@ input:focus {
 
 .shrink {
 
-    width: 85%;
-    height: 98px;
+    width: 100%;
+    height: 111px;
     margin-top: 10px;
 }
 
@@ -345,20 +345,20 @@ input:focus {
     padding: 20px;
     border-left: 15px solid teal;
     border-radius: 5px;
+    padding-bottom: 63px;
     border-bottom: 1px solid grey;
-    height: 90px;
-    margin: 20px 0;
+    height: 69px;
 }
 
 .warently {
-    font-size: 2.0rem;
+    font-size: 1.4rem;
     letter-spacing: -1px;
     color: #777777;
     margin-bottom: 5px;
 }
 
 .wrapper p {
-    font-size: 18px;
+    font-size: 14px;
     color: #7c7777;
     margin: 0;
 }
@@ -394,7 +394,7 @@ input:focus {
 
 .img-fluid {
     max-width: 100%;
-    height: 140px;
+    height: 160px;
 }
 
 .highlight-12 {
@@ -556,7 +556,7 @@ input:focus {
 }
 
 .sentizer-er {
-    border-right: 0.11px solid #7a7474;
+    border-right: 0.11px solid #ddd;
 }
 
 .comfort-life {
@@ -760,6 +760,20 @@ input:focus {
     border-radius: 5px;
 }
 
+.comfort-zone {
+    margin-bottom: 10px;
+    width: 100%;
+    clear: none;
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+    padding: 0px 10px 0;
+    font-family: Arimo, Arial;
+    float: none;
+
+    border: 1px solid #ddd;
+}
+
 .value-display {
     font-weight: 400;
     color: #444444;
@@ -775,6 +789,24 @@ input:focus {
 #yearValue,
 .text-muted {
     font-size: 12px;
+}
+
+.celecon {
+    font-Weight: 500;
+    Color: rgb(0, 0, 0);
+    font-Size: 13px;
+    Line-Height: 17px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.wascot {
+    font-family: Arimo, sans-serif;
+    color: #777777;
+    padding: 12px;
+    border-bottom: 10px solid #76b1d0;
 }
 
 @media (max-width:1200px) {
@@ -821,6 +853,10 @@ input:focus {
 
     .wanted {
         margin-left: -9rem;
+    }
+
+    .container {
+        padding: 0px 12px;
     }
 
     .color {
@@ -875,6 +911,10 @@ input:focus {
         font-size: 11px;
         margin-left: 12px;
         display: contents;
+    }
+
+    .review-card {
+        width: 100%;
     }
 
     .support .content-wrapper {
@@ -961,7 +1001,7 @@ input:focus {
 
     .img-fluid {
         max-width: 100%;
-        height: 85px;
+        height: 80px;
     }
 
     .conjection-froud {
