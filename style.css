@@ -42,6 +42,7 @@ span {
 .const {
     background-color: #6D6D6D;
     max-width: 1082px;
+    height: 61px;
     margin-top: -8px;
     overflow-x: visible;
     white-space: nowrap;
@@ -49,7 +50,6 @@ span {
 }
 
 .container {
-    /* position: relative; */
     max-width: 1082px;
     /* z-index: 19; */
 }
@@ -866,7 +866,7 @@ input:focus {
 }
 
 .styled {
-    margin-top: 6rem;
+    margin-top: 5.8rem;
 }
 
 .btn-toggle {
@@ -903,6 +903,145 @@ input:hover {
 
 .crs {
     padding-left: 20px;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+.phone-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(0 0 0 / 0.1);
+    background-color: white;
+    margin-bottom: 20px;
+    text-align: left;
+    /* Align text to the left */
+}
+
+.phone-card img {
+    width: 150px;
+    height: 145px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.phone-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    /* Stack buttons vertically */
+    gap: 5px;
+    /* Space between buttons */
+    margin-left: 10px;
+    /* Space between image and buttons */
+}
+
+.buttons button {
+    background: #EEEEEE;
+    /* Dark background */
+    color: black;
+    /* White text */
+    border: none;
+    /* No border */
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+    text-align: left;
+    /* Align button text to the left */
+}
+
+.buttons button:hover {
+    background: #c00;
+    color: white;
+}
+
+.compare-checkbox input::placeholder {
+    color: black;
+    padding: 15px;
+    font-size: 14px;
+    padding-left: 3px;
+}
+
+.price {
+    color: red;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.compare-checkbox {
+    margin-bottom: 10px;
+    background-color: #F3F3F3;
+    padding: 5px;
+}
+
+.compare-checkbox label {
+    font-weight: bold;
+}
+
+.compare-checkbox input {
+    margin-left: 5px;
+}
+
+.phone-card img:nth-child(2) {
+    display: block;
+    margin: auto;
+}
+
+.price {
+    color: red;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #222;
+    margin-top: 15px;
+}
+
+table th,
+table td {
+    border: 1px solid #ccc;
+    padding: 8px 7px;
+    vertical-align: top;
+    text-align: left;
+}
+
+table th {
+    background-color: #efefef;
+    font-weight: normal;
+    color: #333;
+}
+
+table tr.section {
+    background-color: #f7f7f7;
+    font-weight: bold;
+    color: #c00;
+}
+
+table tr:hover {
+    background-color: #f0f0f0;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -957,6 +1096,7 @@ input:hover {
 }
 
 @media (max-width: 768px) {
+
     .central input {
         display: none;
     }
@@ -969,6 +1109,10 @@ input:hover {
         width: 380px;
     }
 
+    table td,
+    th {
+        font-size: 11px;
+    }
 
     .sentizer-er iframe {
         width: 100%;
@@ -976,6 +1120,13 @@ input:hover {
 
     .wanted {
         margin-left: -9rem;
+    }
+
+
+    .section-header td {
+        background-color: #f5f5f5;
+        font-weight: bold;
+        text-align: center;
     }
 
     .container {
