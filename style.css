@@ -4,7 +4,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: "Roboto", sans-serif;
+    font-family: Arimo, sans-serif;
     box-sizing: border-box;
 }
 
@@ -1044,6 +1044,26 @@ table tr:hover {
     background-color: #f0f0f0;
 }
 
+.western {
+    font-size: 21px;
+    margin: 21px 20px;
+    font-weight: 600;
+    color: #666;
+}
+
+.paragh-div {
+    padding: 0px 20px;
+    height: 180px;
+}
+
+.paragh-div p {
+    font-size: 14px;
+    font-weight: 600;
+    height: 12px;
+    font-family: "Arimo", Arial, sans-serif;
+    max-width: 600px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .volunteer {
         width: 500px;
@@ -1077,9 +1097,7 @@ table tr:hover {
         width: 20% !important;
         margin-left: 0 !important;
     }
-
-
-
+    
     .comfort-life-zone {
         display: none;
     }
@@ -1100,7 +1118,7 @@ table tr:hover {
     .central input {
         display: none;
     }
-
+    
     .warently {
         font-size: 1rem;
     }
@@ -1123,6 +1141,9 @@ table tr:hover {
     }
 
 
+    .paragh-div p {
+        font-size: 8px;
+    }
     .section-header td {
         background-color: #f5f5f5;
         font-weight: bold;
