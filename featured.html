@@ -25,34 +25,24 @@
     <div class="main-wrapper d-lg-inline d-none ">
         <!-- Top Navbar -->
         <nav class="navbar navbar-dark ">
-            <div class="container const  d-flex align-items-center justify-content-between ">
-                <button class="navbar-toggler me-3" type="button" onclick="toggleMenu()">
+            <div class="container const  d-flex align-items-center justify-content-between">
+                <button class="navbar-toggler mb-2" type="button" onclick="toggleMenu()">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <a class="navbar-brand d-flex align-items-center " href="#">
                     <img src="imges/download.png" alt="GSMArena Logo" />
                 </a>
-                <form action="" class="central d-flex align-items-center">
-                    <input type="text" class="no-focus-border" placeholder="Search">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="24" width="24" class="ms-2">
-                        <path fill="#ffffff"
-                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
-                    </svg>
-                </form>
-                <div class="controvecy">
+                <div class="controvecy mb-2 ">
                     <div class="icon-container">
                         <button type="button" class="btn border-right" data-bs-toggle="tooltip" data-bs-placement="left"
                             title="Tip Us">
-                            <i class="fa-solid fa-lightbulb fa-lg" style="color: #ffffff;"></i>
+                            <img src="iccons/youtube-color-svgrepo-com.svg" alt="" width="30px">
                         </button>
+
                         <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="left"
                             title="Tip Us">
-                            <i class="fa-brands fa-youtube fa-lg border-left" style="color: #ffffff;"></i>
-                        </button>
-                        <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="left"
-                            title="Tip Us">
-                            <i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i>
+                            <img src="iccons/instagram-color-svgrepo-com.svg" alt="" width="22px">
                         </button>
                         <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="left"
                             title="Tip Us">
@@ -72,12 +62,17 @@
                         </button>
                     </div>
                 </div>
-
-
+                <form action="" class="central d-flex align-items-center">
+                    <input type="text" class="no-focus-border" placeholder="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="24" width="24" class="ms-2">
+                        <path fill="#ffffff"
+                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                    </svg>
+                </form>
         </nav>
 
         <!-- Left Menu -->
-        <div id="leftMenu" class="container ">
+        <div id="leftMenu" class="container show">
             <div class="row">
                 <div class="col-12 d-flex align-items-center d-block">
                     <a href="index.html" class="nav-link">Home</a>
@@ -86,9 +81,7 @@
                     <a href="videos.html" class="nav-link">Videos</a>
                     <a href="featured.html" class="nav-link">Featured</a>
                     <a href="phonefinder.html" class="nav-link">Phone Finder</a>
-                    <a href="compare.html" class="nav-link">Compare</a>
-                    <a href="#" class="nav-link">Merch</a>
-                    <a href="#" class="nav-link">Coverage</a>
+                    <a href="compare.html" class="nav-link">Campare</a>
                     <a href="contact.html" class="nav-link">Contact</a>
                 </div>
             </div>
@@ -111,8 +104,8 @@
             </button>
         </div>
     </nav>
-    <div class="collapse mobile-menu d-md-none" id="mobileMenu">
-        <!-- Icons row -->
+
+    <div class="collapse mobile-menu d-lg-none" id="mobileMenu">
         <div class="menu-icons">
             <i class="fas fa-home"></i>
             <i class="fab fa-facebook-f"></i>
@@ -121,8 +114,6 @@
             <i class="fas fa-share-alt"></i>
         </div>
         <div class="column">
-
-            <!-- Links section -->
             <a href="index.html">Home</a>
             <a href="news.html">News</a>
             <a href="rewies.html">Reviews</a>
@@ -131,7 +122,7 @@
             <a href="phonefinder.html">Phone Finder</a>
             <a href="compare.html">Compare</a>
             <a href="#">Coverage</a>
-            <a href="contact.html">Contact Us</a>
+            <a href="contact">Contact Us</a>
             <a href="#">Merch</a>
             <a href="#">Tip Us</a>
             <a href="#">Privacy</a>
@@ -157,7 +148,32 @@
     </div>
     <div class="container support content-wrapper" id="Top">
         <div class="row">
-            <div class="col-md-4 col-5">
+
+            <div class="col-md-8 col-5  d-md-inline col-12 ">
+                <div class="comfort-life position-absolute">
+                    <img class="w-100 h-100" src="imges/Screenshot (163).png"
+                        style="background-repeat: no-repeat; background-size: cover;" alt="">
+                    <div class="position-absolute d-flex mt-1">
+                        <label class="text-white whitening " >Popular Tags</label>
+                        <button class="mobiles-button">Featured</button>
+                        <button class="mobiles-button">Android</button>
+                        <button class="mobiles-button">Samsung</button>
+                        <button class="mobiles-button">Nokia</button>
+                        <button class="mobiles-button">Sony</button>
+                        <button class="mobiles-button">Rumors</button>
+                        <button class="mobiles-button">Apple</button>
+                        <button class="mobiles-button">Motorola</button>
+                    </div>
+
+                    <div class="comon">
+                        <label for="" class="text-white whitening ">Search For</label>
+                        <input type="text" class="bg-white">
+                        <button class="mobiles-button bg-white">Android</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 col-5" style="position: relative; left: 24px;">
                 <button class="solid w-100 py-2">
                     <i class="fa-solid fa-mobile fa-sm" style="color: white;"></i>
                     Phone Finder</button>
@@ -202,38 +218,184 @@
                 <button class="solid w-50 py-2">
                     <i class="fa-solid fa-bars fa-sm"></i>
                     All Brands</button>
-                <button class="solid w-50 py-2">
+                <button class="solid  py-2" style="    width: 177px;">
                     <i class="fa-solid fa-volume-high fa-sm"></i>
                     Remor Mill</button>
             </div>
-            <div class="col-md-8 col-5  d-md-inline col-12 ">
-                <div class="comfort-life position-absolute">
-                    <img class="w-100 h-100" src="imges/Screenshot (163).png"
-                        style="background-repeat: no-repeat; background-size: cover;" alt="">
-                    <div class="position-absolute d-flex mt-1">
-                        <p class="text-white" style="font-size: 11px; margin-left: 9px;">Popular Tags</p>
-                        <button class="mobiles-button">Featured</button>
-                        <button class="mobiles-button">Android</button>
-                        <button class="mobiles-button">Samsung</button>
-                        <button class="mobiles-button">Nokia</button>
-                        <button class="mobiles-button">Sony</button>
-                        <button class="mobiles-button">Rumors</button>
-                        <button class="mobiles-button">Apple</button>
-                        <button class="mobiles-button">Motorola</button>
-                    </div>
 
-                    <div class="comon">
-                        <label for="" class="text-white">Search For</label>
-                        <input type="text" class="bg-white">
-                        <button class="mobiles-button bg-white">Android</button>
-                    </div>
-                </div>
-
-            </div>
         </div>
     </div>
     <div class="container mt-0  ">
         <div class="row">
+            <div class="col-lg-4 col-md-6 col-12  sentizer-er" style="background-color: #EEEEEE; ">
+
+                <div class="review-card">
+                    <img src="https://fdn.gsmarena.com/imgroot/news/25/05/honor-400-pro-ifr/-344x215/gsmarena_000.jpg"
+                        alt="Moto G Stylus 5G">
+                    <div class="review-card-body">
+                        <div class="review-card-title">Honor 400 Pro in for review in gsmarena</div>
+                        <div class="review-card-meta">
+                            <span>02 May 2025</span>
+                            <span><i class="bi bi-chat-dots-fill"></i>40 comments</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <img src="https://fdn.gsmarena.com/imgroot/news/25/05/vivo-x200-ultra-vs-x100-ultra/-344x215/gsmarena_00.jpg"
+                        alt="Moto G Stylus 5G">
+                    <div class="review-card-body">
+                        <div class="review-card-title">Camera battle: vivo X200 Ultra vs X100 Ultra</div>
+                        <div class="review-card-meta">
+                            <span>02 May 2025</span>
+                            <span><i class="bi bi-chat-dots-fill"></i>40 comments</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <img src="https://fdn.gsmarena.com/imgroot/news/25/05/samsung-galaxy-s25-edge-ifr/-344x215/gsmarena_000.jpg"
+                        alt="Moto G Stylus 5G">
+                    <div class="review-card-body">
+                        <div class="review-card-title">Samsung Galaxy S25 Edge</div>
+                        <div class="review-card-meta">
+                            <span>02 May 2025</span>
+                            <span><i class="bi bi-chat-dots-fill"></i>40 comments</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <img src="https://fdn.gsmarena.com/imgroot/news/25/05/huawei-watch-fit-4-pro-review/-344x215/gsmarena_001.jpg"
+                        alt="Moto G Stylus 5G">
+                    <div class="review-card-body">
+                        <div class="review-card-title">Huawei Watch Fit 4 Pro review</div>
+                        <div class="review-card-meta">
+                            <span>02 May 2025</span>
+                            <span><i class="bi bi-chat-dots-fill"></i>40 comments</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <img src="https://fdn.gsmarena.com/imgroot/news/25/05/vivo-x200-ultra-ifr/-344x215/gsmarena_000.jpg"
+                        alt="Moto G Stylus 5G">
+                    <div class="review-card-body">
+                        <div class="review-card-title">vivo X200 Ultra  for review </div>
+                        <div class="review-card-meta">
+                            <span>02 May 2025</span>
+                            <span><i class="bi bi-chat-dots-fill"></i>40 comments</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <img src="https://fdn.gsmarena.com/imgroot/news/25/04/samsung-galaxy-a56-vs-galaxy-s24-fe/-344x215/gsmarena_001.jpg"
+                        alt="Moto G Stylus 5G">
+                    <div class="review-card-body">
+                        <div class="review-card-title">Samsung Galaxy A56 vs. Galaxy S24 FE</div>
+                        <div class="review-card-meta">
+                            <span>02 May 2025</span>
+                            <span><i class="bi bi-chat-dots-fill"></i>40 comments</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <img src="https://fdn.gsmarena.com/imgroot/news/25/04/week-in-review-16/-344x215/gsmarena_001.jpg"
+                        alt="Moto G Stylus 5G">
+                    <div class="review-card-body">
+                        <div class="review-card-title"> Galaxy M56 arrives, new Moto tablet and laptop, Week 16 in
+                            review</div>
+                        <div class="review-card-meta">
+                            <span>02 May 2025</span>
+                            <span><i class="bi bi-chat-dots-fill"></i>40 comments</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-6 col-12  sentizer-er" style="background-color: #EEEEEE; ">
+
+                <div class="review-card">
+                    <img src="https://fdn.gsmarena.com/imgroot/news/25/04/motorola-edge-60-ifrs/-344x215/gsmarena_005.jpg"
+                        alt="Moto G Stylus 5G">
+                    <div class="review-card-body">
+                        <div class="review-card-title">Motorola Edge 60 in for review in gsmarena</div>
+                        <div class="review-card-meta">
+                            <span>02 May 2025</span>
+                            <span><i class="bi bi-chat-dots-fill"></i>40 comments</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <img src="http://fdn.gsmarena.com/imgroot/news/25/04/tecno-camon-40-premier-battery-charging-test/-344x215/gsmarena_000.jpg"
+                        alt="Moto G Stylus 5G">
+                    <div class="review-card-body">
+                        <div class="review-card-title">Tecno Camon 40 Premier battery And Charging test </div>
+                        <div class="review-card-meta">
+                            <span>02 May 2025</span>
+                            <span><i class="bi bi-chat-dots-fill"></i>40 comments</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <img src="https://fdn.gsmarena.com/imgroot/news/25/04/cmf-phone-2-pro-ifr/-344x215/gsmarena_000.jpg"
+                        alt="Moto G Stylus 5G">
+                    <div class="review-card-body">
+                        <div class="review-card-title">CMF Phone 2 Pro in For Review</div>
+                        <div class="review-card-meta">
+                            <span>02 May 2025</span>
+                            <span><i class="bi bi-chat-dots-fill"></i>40 comments</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <img src="https://fdn.gsmarena.com/imgroot/news/25/04/oppo-k13/-344x215/gsmarena_001.jpg"
+                        alt="Moto G Stylus 5G">
+                    <div class="review-card-body">
+                        <div class="review-card-title">Oppo K13 Hands On</div>
+                        <div class="review-card-meta">
+                            <span>02 May 2025</span>
+                            <span><i class="bi bi-chat-dots-fill"></i>40 comments</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <img src="https://fdn.gsmarena.com/imgroot/news/25/04/google-pixel-9a-ifr/-344x215/gsmarena_000.jpg"
+                        alt="Moto G Stylus 5G">
+                    <div class="review-card-body">
+                        <div class="review-card-title">Google Pixel 9a in for full review </div>
+                        <div class="review-card-meta">
+                            <span>02 May 2025</span>
+                            <span><i class="bi bi-chat-dots-fill"></i>40 comments</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <img src="https://fdn.gsmarena.com/imgroot/news/25/04/samsung-galaxy-a36-vs-samsung-galaxy-a35/-344x215/gsmarena_100.jpg"
+                        alt="Moto G Stylus 5G">
+                    <div class="review-card-body">
+                        <div class="review-card-title">Battle Of: Samsung Galaxy A36 vs. Samsung Galaxy A35</div>
+                        <div class="review-card-meta">
+                            <span>02 May 2025</span>
+                            <span><i class="bi bi-chat-dots-fill"></i>40 comments</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <img src="https://fdn.gsmarena.com/imgroot/news/25/04/oppo-find-x8-ultra-china/-344x215/gsmarena_000.jpg"
+                        alt="Moto G Stylus 5G">
+                    <div class="review-card-body">
+                        <div class="review-card-title">Gallery: Here are some Oppo Find X8 Ultra camera samples from a
+                            photo walk around Xi'an
+                        </div>
+                        <div class="review-card-meta">
+                            <span>02 May 2025</span>
+                            <span><i class="bi bi-chat-dots-fill"></i>40 comments</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
             <div class="col-lg-4 col-md-6 col-12  bg-white p-3">
 
                 <img src="https://fdn.gsmarena.com/imgroot/static/banners/self/arenaev-300x250.jpg" class="w-100 "
@@ -409,206 +571,6 @@
                     <img src="https://fdn.gsmarena.com/imgroot/static/banners/self/review-pixel-9-pro-300x250.jpg"
                         class=" d-block mx-auto" style="width: 300px;">
                 </div>
-
-            </div>
-            <div class="col-lg-8 col-md-6 col-12  sentizer-er" style="background-color: #EEEEEE; ">
-              
-                <div class="comfort-zone mt-4 bg-white d-flex align-items-start p-3 ">
-                    <img src="https://fdn.gsmarena.com/imgroot/news/25/05/nubia-z70s-ultra-ifr/-344x215/gsmarena_000.jpg"
-                        class="img-fluid rounded-start" />
-                    <div class="content px-3">
-                        <p class="fw-bold">nubia Z70S Ultra in for review</p>
-                        <span>
-                            Say hello to the nubia Z70S Ultra - an undeniably outrageous smartphone in almost every way.
-                            It's eye-catching for a few
-                            reasons - it has a huge 6.85-inch 144Hz display with razor-thin bezels all... </span>
-                    </div>
-                </div>
-                <div class=" comfort-zone mt-4 bg-white d-flex align-items-start p-3 ">
-                    <img src="https://fdn.gsmarena.com/imgroot/news/25/05/huawei-nova-14-launch-event-confirmed/-344x215/gsmarena_000.jpg"
-                        class="img-fluid rounded-start" />
-                    <div class="content px-3">
-                        <p class="fw-bold">Huawei schedules nova 14 series launch event</p>
-                        <span>
-                            consist of at least three devices with a nova 14, nova14 Pro and an Ultra model...</span>
-                    </div>
-                </div>
-
-                <div class="comfort-zone mt-4 bg-white d-flex align-items-start p-3 ">
-                    <img src="https://fdn.gsmarena.com/imgroot/news/25/05/oppo-a5x-materials-leak/-344x215/gsmarena_000.jpg"
-                        alt="Top 10 Trending Phones" class="img-fluid rounded-start" />
-                    <div class="content px-3">
-                        <p class="fw-bold">Oppo A5x marketing materials leak revealing some of its main specs</p>
-                        <span class="">
-                            Oppo is working on the A5x, which will be added to the ever-expanding A5 family, which
-                            already includes the A5, A5
-                            Energy, A5 Pro, and A5 Pro 4G. The A5x will be a 4G-only model according to newly...</span>
-                    </div>
-                </div>
-                <div class="comfort-zone mt-4 bg-white d-flex align-items-start p-3 ">
-                    <img src="https://fdn.gsmarena.com/imgroot/news/25/05/samsung-galaxy-s26-edge-rumor/-344x215/gsmarena_000.jpg"
-                        alt="Top 10 Trending Phones" class="img-fluid rounded-start" />
-                    <div class="content px-3">
-                        <p class="fw-bold">
-                            Samsung might kill the Galaxy S26+ in favor of the S26 Edge</p>
-                        <span>Samsung just unveiled the Galaxy S25 Edge a few hours ago, and we already have a rumor
-                            about its successor, as
-                            apparently there will definitely be one. According to sources in Korea, the Galaxy S26..
-                        </span>
-                    </div>
-                </div>
-                <div class="comfort-zone mt-4 bg-white d-flex align-items-start p-3 ">
-                    <img src="https://fdn.gsmarena.com/imgroot/news/25/05/nothing-phone-3-price/-344x215/gsmarena_000.jpg"
-                        alt="Top 10 Trending Phones" class="img-fluid rounded-start" />
-                    <div class="content px-3">
-                        <p class="fw-bold">Nothing Phone (3) has its price revealed by the CEO
-
-                        </p>
-                        <span class="">Nothing already launched the Phone (3a) and Phone (3a) Pro mid-rangers, and the
-                            company is slowly getting ready to
-                            unveil the Phone (3), billed as its first ever proper flagship device. This is...</span>
-                    </div>
-                </div>
-                <div class="comfort-zone mt-4 bg-white d-flex align-items-start p-3 ">
-                    <img src="https://fdn.gsmarena.com/imgroot/news/25/05/oppo-pad2-pro-ofic/-344x215/gsmarena_001.jpg"
-                        alt="Top 10 Trending Phones" class="img-fluid rounded-start" />
-                    <div class="content px-3">
-                        <p class="fw-bold">OnePlus Pad 2 Pro is now official
-                        </p>
-                        <span class="">OnePlus is now selling Pad 2 Pro, a new tablet with a flagship chipset. The slate
-                            was listed on the Oppo store in China
-                            earlier this month, and we immediately spotted its similarities to another...</span>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-between align-items-center my-3">
-                    <!-- Left link -->
-                    <a href="#Top" role="button" aria-label="Go to top of page" class="color">
-                        &#9650; To Top
-                    </a>
-
-                    <!-- Pagination in the middle -->
-                    <nav aria-label="Page navigation">
-                        <ul class="pagination mb-0">
-                            <li class="page-item"><a class="page-link color" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link color" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link color" href="#">3</a></li>
-                        </ul>
-                    </nav>
-
-                    <!-- Right link -->
-                    <a href="#bottom" role="button" aria-label="Go to bottom of page" class="color">
-                        &#9660; Footer
-                    </a>
-                </div>
-            <!-- Galaxy S25 Edge article -->
-            <div class="comfort-zone mt-4 bg-white d-flex align-items-start p-3">
-                <img src="https://fdn.gsmarena.com/imgroot/news/25/05/week-19-in-review/-344x215/gsmarena_000.jpg"
-                    alt="Galaxy S25 Edge" class="img-fluid rounded-start" />
-                <div class="content px-3">
-                    <p class="fw-bold">Galaxy S25 Edge is coming on May 13, Realme prototype with 10k battery, Week 19 in review</p>
-                    <span>Samsung confirmed the Galaxy S25 Edge launch date this week - the slim Galaxy is coming on May 13. The
-                        Edge "embodies the ultimate camera experience" with its much-rumored and now confirmed 200 MP...</span>
-                </div>
-            </div>
-            
-            <!-- Realme GT 7 -->
-            <div class="comfort-zone mt-4 bg-white d-flex align-items-start p-3">
-                <img src="https://fdn.gsmarena.com/imgroot/news/25/05/realme-gt7-ifr/-344x215/gsmarena_00.jpg" alt="Realme GT 7"
-                    class="img-fluid rounded-start" />
-                <div class="content px-3">
-                    <p class="fw-bold">Realme GT 7 in for review</p>
-                    <span>Realme unveiled the GT 7 in China in April, and the phone is now ready for its international launch. OK,
-                        almost ready, today we get to share an exclusive glimpse at the global model's design. We...</span>
-                </div>
-            </div>
-            
-            <!-- Galaxy A56 vs S24 FE -->
-            <div class="comfort-zone mt-4 bg-white d-flex align-items-start p-3">
-                <img src="https://fdn.gsmarena.com/imgroot/news/25/04/samsung-galaxy-a56-vs-galaxy-s24-fe/-344x215/gsmarena_001.jpg"
-                    alt="Galaxy A56 vs S24 FE" class="img-fluid rounded-start" />
-                <div class="content px-3">
-                    <p class="fw-bold">Samsung Galaxy A56 vs. Galaxy S24 FE</p>
-                    <span>The hugely popular Samsung Galaxy A series got its annual overhaul recently. The headlining A56 didn't
-                        bring a whole lot of improvements over the previous generation, the most obvious being a chipset...</span>
-                </div>
-            </div>
-            
-            <!-- Motorola Edge 60 Pro -->
-            <div class="comfort-zone mt-4 bg-white d-flex align-items-start p-3">
-                <img src="https://fdn.gsmarena.com/imgroot/news/25/04/motorola-edge-60-ifrs/-344x215/gsmarena_000.jpg"
-                    alt="Motorola Edge 60 Pro" class="img-fluid rounded-start" />
-                <div class="content px-3">
-                    <p class="fw-bold">Motorola Edge 60 Pro in for review</p>
-                    <span>Today, Motorola's new Edge 60 Pro went on pre-order in India, and we got ours in the mail, alongside its
-                        non-Pro counterpart! Meet the Motorola Edge 60 Pro and Edge 60. As you can see from the...</span>
-                </div>
-            </div>
-            
-            <!-- Tecno Camon 40 Premier -->
-            <div class="comfort-zone mt-4 bg-white d-flex align-items-start p-3">
-                <img src="https://fdn.gsmarena.com/imgroot/news/25/04/tecno-camon-40-premier-battery-charging-test/-344x215/gsmarena_000.jpg"
-                    alt="Tecno Camon 40 Premier" class="img-fluid rounded-start" />
-                <div class="content px-3">
-                    <p class="fw-bold">Tecno Camon 40 Premier battery life and charging test results are in</p>
-                    <span>We have been testing the Tecno Camon 40 Premier 5G and wanted to share our battery life findings. Tecno
-                        switched to Si/C tech for the Camon 40 Premier battery, but that netted a minimal 100mAh...</span>
-                </div>
-            </div>
-            
-            <!-- Motorola Edge 60 -->
-            <div class="comfort-zone mt-4 bg-white d-flex align-items-start p-3">
-                <img src="https://fdn.gsmarena.com/imgroot/news/25/04/motorola-edge-60-ifrs/-344x215/gsmarena_005.jpg"
-                    alt="Motorola Edge 60" class="img-fluid rounded-start" />
-                <div class="content px-3">
-                    <p class="fw-bold">Motorola Edge 60 in for review</p>
-                    <span>Motorola's Edge 60 series is here, so it's time to unbox the Edge 60. But before we get to the sceneted
-                        box, a word on what's different between this green Pantone Shamrock Edge 60 and its blue Pro...</span>
-                </div>
-            </div>
-            
-            <!-- CMF Phone 2 Pro -->
-            <div class="comfort-zone mt-4 bg-white d-flex align-items-start p-3">
-                <img src="https://fdn.gsmarena.com/imgroot/news/25/04/cmf-phone-2-pro-ifr/-344x215/gsmarena_000.jpg"
-                    alt="CMF Phone 2 Pro" class="img-fluid rounded-start" />
-                <div class="content px-3">
-                    <p class="fw-bold">CMF Phone 2 Pro in for review</p>
-                    <span>This just in - the CMF Phone 2 Pro has arrived at HQ and joining our review queue! Nothing's CMF
-                        sub-brand's first Pro phone starts at €250/£220/₹19,000 for the 8/128GB model, and you can have...</span>
-                </div>
-            </div>
-            
-            <!-- Moto G Stylus 2025 -->
-            <div class="comfort-zone mt-4 bg-white d-flex align-items-start p-3">
-                <img src="https://fdn.gsmarena.com/imgroot/news/25/04/motorola-edge-60-stylus-hands-on/-344x215/gsmarena_001.jpg"
-                    alt="Moto G Stylus 2025" class="img-fluid rounded-start" />
-                <div class="content px-3">
-                    <p class="fw-bold">Moto G Stylus (2025) in for review</p>
-                    <span>This is the Moto G Stylus (2025) and it has the stylus-equipped midrange market in the US all to its own.
-                        The phone ships with a USB-C cable and a SIM eject tool. Ours is the Pantone Gibraltar sea...</span>
-                </div>
-            </div>
-            
-            <!-- Google Pixel 9a -->
-            <div class="comfort-zone mt-4 bg-white d-flex align-items-start p-3">
-                <img src="https://fdn.gsmarena.com/imgroot/news/25/04/google-pixel-9a-ifr/-344x215/gsmarena_000.jpg"
-                    alt="Google Pixel 9a" class="img-fluid rounded-start" />
-                <div class="content px-3">
-                    <p class="fw-bold">Google Pixel 9a in for full review</p>
-                    <span>The Pixel a is often the most popular member of a lineup and for good reason. A phone with just enough
-                        flagship features for a midrange price - what's not to like. The latest unit, the Pixel 9a,...</span>
-                </div>
-            </div>
-            
-            <!-- Oppo K13 -->
-            <div class="comfort-zone mt-4 bg-white d-flex align-items-start p-3">
-                <img src="https://fdn.gsmarena.com/imgroot/news/25/04/oppo-k13/-344x215/gsmarena_001.jpg" alt="Oppo K13"
-                    class="img-fluid rounded-start" />
-                <div class="content px-3">
-                    <p class="fw-bold">Oppo K13 hands-on</p>
-                    <span>As promised, Oppo today introduced the Oppo K13 in India before its global debut. The smartphone - having
-                        Gen-Z as its target audience - comes in Prism Black and Icy Purple colors. We got our hands...</span>
-                </div>
-            </div>
 
             </div>
         </div>

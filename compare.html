@@ -25,34 +25,24 @@
     <div class="main-wrapper d-lg-inline d-none ">
         <!-- Top Navbar -->
         <nav class="navbar navbar-dark ">
-            <div class="container const  d-flex align-items-center justify-content-between ">
-                <button class="navbar-toggler me-3" type="button" onclick="toggleMenu()">
+            <div class="container const  d-flex align-items-center justify-content-between">
+                <button class="navbar-toggler mb-2" type="button" onclick="toggleMenu()">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <a class="navbar-brand d-flex align-items-center " href="#">
                     <img src="imges/download.png" alt="GSMArena Logo" />
                 </a>
-                <form action="" class="central d-flex align-items-center">
-                    <input type="text" class="no-focus-border" placeholder="Search">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="24" width="24" class="ms-2">
-                        <path fill="#ffffff"
-                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
-                    </svg>
-                </form>
-                <div class="controvecy">
+                <div class="controvecy mb-2 ">
                     <div class="icon-container">
                         <button type="button" class="btn border-right" data-bs-toggle="tooltip" data-bs-placement="left"
                             title="Tip Us">
-                            <i class="fa-solid fa-lightbulb fa-lg" style="color: #ffffff;"></i>
+                            <img src="iccons/youtube-color-svgrepo-com.svg" alt="" width="30px">
                         </button>
+
                         <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="left"
                             title="Tip Us">
-                            <i class="fa-brands fa-youtube fa-lg border-left" style="color: #ffffff;"></i>
-                        </button>
-                        <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="left"
-                            title="Tip Us">
-                            <i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i>
+                            <img src="iccons/instagram-color-svgrepo-com.svg" alt="" width="22px">
                         </button>
                         <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="left"
                             title="Tip Us">
@@ -72,12 +62,17 @@
                         </button>
                     </div>
                 </div>
-
-
+                <form action="" class="central d-flex align-items-center">
+                    <input type="text" class="no-focus-border" placeholder="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="24" width="24" class="ms-2">
+                        <path fill="#ffffff"
+                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                    </svg>
+                </form>
         </nav>
 
         <!-- Left Menu -->
-        <div id="leftMenu" class="container ">
+        <div id="leftMenu" class="container show">
             <div class="row">
                 <div class="col-12 d-flex align-items-center d-block">
                     <a href="index.html" class="nav-link">Home</a>
@@ -86,9 +81,8 @@
                     <a href="videos.html" class="nav-link">Videos</a>
                     <a href="featured.html" class="nav-link">Featured</a>
                     <a href="phonefinder.html" class="nav-link">Phone Finder</a>
-                    <a href="#" class="nav-link">Compare</a>
-                    <a href="#" class="nav-link">Merch</a>
-                    <a href="#" class="nav-link">Coverage</a>
+                    <a href="compare.html" class="nav-link">Campare</a>
+
                     <a href="contact.html" class="nav-link">Contact</a>
                 </div>
             </div>
@@ -127,9 +121,9 @@
             <a href="videos.html">Videos</a>
             <a href="featured.html">Featured</a>
             <a href="phonefinder.html">Phone Finder</a>
-            <a href="compare">Compare</a>
+            <a href="compare.html">Compare</a>
             <a href="#">Coverage</a>
-            <a href="contact.html">Contact Us</a>
+            <a href="contact">Contact Us</a>
             <a href="#">Merch</a>
             <a href="#">Tip Us</a>
             <a href="#">Privacy</a>
@@ -155,7 +149,13 @@
     </div>
     <div class="container support content-wrapper" id="Top">
         <div class="row">
-            <div class="col-md-4 col-5">
+            <div class="col-md-8 col-5  d-md-inline  ">
+                <div class="comfort-life position-absolute">
+                    <img class="w-100 h-100" src="imges/magnifient sectton.jpeg"
+                        style="background-repeat: no-repeat; background-size: cover;" alt="">
+                </div>
+            </div>
+            <div class="col-md-4 col-5" style="position: relative; left: 24px;">
                 <button class="solid w-100 py-2">
                     <i class="fa-solid fa-mobile fa-sm" style="color: white;"></i>
                     Phone Finder</button>
@@ -200,15 +200,10 @@
                 <button class="solid w-50 py-2">
                     <i class="fa-solid fa-bars fa-sm"></i>
                     All Brands</button>
-                <button class="solid w-50 py-2">
+                <button class="solid py-2" style="
+                    width: 177px;">
                     <i class="fa-solid fa-volume-high fa-sm"></i>
                     Remor Mill</button>
-            </div>
-            <div class="col-md-8 col-5  d-md-inline  ">
-                <div class="comfort-life position-absolute">
-                    <img class="w-100 h-100" src="imges/magnifient sectton.jpeg"
-                        style="background-repeat: no-repeat; background-size: cover;" alt="">
-                </div>
             </div>
         </div>
 
@@ -416,41 +411,73 @@
         </table>
 
 
-</body>
-<div id="bottom" class="container d-flex" style="max-width: 1034px;">
-    <div class="row align-items-center">
-        <div class="col-md-2 m-auto col-4 d-flex justify-content-center align-items-center "> <img
-                src="https://fdn2.gsmarena.com/w/css/logo-gsmarena-com.png" alt="">
-        </div>
-        <div class="col-10 nav-wrap m-auto text-center ">
-            <div class="nav-container">
-                <a href="#">Home</a>
-                <a href="#">News</a>
-                <a href="#">Reviews</a>
-                <a href="#">Compare</a>
-                <a href="#">Coverage</a>
-                <a href="#">Glossary</a>
-                <a href="#">FAQ</a>
-                <a href="#"> <i class="fa-solid fa-wifi fa-sm"></i> RSS</a>
-                <a href="#"> <i class="fa-brands fa-youtube fa-sm"></i> YouTube</a>
-                <a href="#"> <i class="fa-brands fa-instagram fa-sm"></i> Instagram</a>
-                <a href="#"> <i class="fa-brands fa-tiktok fa-sm"></i>TikTok</a>
-                <a href="#"> <i class="fa-brands fa-facebook-f fa-sm"></i> Facebook</a>
-                <a href="#"> <i class="fa-brands fa-twitter fa-sm"></i>Twitter</a>
-                <a href="#">© 2000-2025 GSMArena.com</a>
-                <a href="#">Mobile version</a>
-                <a href="#">Android app</a>
-                <a href="#">Tools</a>
-                <a href="#">Contact us</a>
-                <a href="#">Merch store</a>
-                <a href="#">Privacy</a>
-                <a href="#">Terms of use</a>
+        <div id="bottom" class="container d-flex" style="max-width: 1034px;">
+            <div class="row align-items-center">
+                <div class="col-md-2 m-auto col-4 d-flex justify-content-center align-items-center "> <img
+                        src="https://fdn2.gsmarena.com/w/css/logo-gsmarena-com.png" alt="">
+                </div>
+                <div class="col-10 nav-wrap m-auto text-center ">
+                    <div class="nav-container">
+                        <a href="#">Home</a>
+                        <a href="#">News</a>
+                        <a href="#">Reviews</a>
+                        <a href="#">Compare</a>
+                        <a href="#">Coverage</a>
+                        <a href="#">Glossary</a>
+                        <a href="#">FAQ</a>
+                        <a href="#"> <i class="fa-solid fa-wifi fa-sm"></i> RSS</a>
+                        <a href="#"> <i class="fa-brands fa-youtube fa-sm"></i> YouTube</a>
+                        <a href="#"> <i class="fa-brands fa-instagram fa-sm"></i> Instagram</a>
+                        <a href="#"> <i class="fa-brands fa-tiktok fa-sm"></i>TikTok</a>
+                        <a href="#"> <i class="fa-brands fa-facebook-f fa-sm"></i> Facebook</a>
+                        <a href="#"> <i class="fa-brands fa-twitter fa-sm"></i>Twitter</a>
+                        <a href="#">© 2000-2025 GSMArena.com</a>
+                        <a href="#">Mobile version</a>
+                        <a href="#">Android app</a>
+                        <a href="#">Tools</a>
+                        <a href="#">Contact us</a>
+                        <a href="#">Merch store</a>
+                        <a href="#">Privacy</a>
+                        <a href="#">Terms of use</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
-</div>
-<script src="script.js"></script>
+
+    <div id="bottom" class="container d-flex mt-3" style="max-width: 1034px;">
+        <div class="row align-items-center">
+            <div class="col-md-2 m-auto col-4 d-flex justify-content-center align-items-center "> <img
+                    src="https://fdn2.gsmarena.com/w/css/logo-gsmarena-com.png" alt="">
+            </div>
+            <div class="col-10 nav-wrap m-auto text-center ">
+                <div class="nav-container">
+                    <a href="/index.html">Home</a>
+                    <a href="/news.html">News</a>
+                    <a href="/rewies.html">Reviews</a>
+                    <a href="/videos.html">Videos</a>
+                    <a href="/featured.html">Featured</a>
+                    <a href="#">Glossary</a>
+                    <a href="#">FAQ</a>
+                    <a href="#"> <i class="fa-solid fa-wifi fa-sm"></i> RSS</a>
+                    <a href="#"> <i class="fa-brands fa-youtube fa-sm"></i> YouTube</a>
+                    <a href="#"> <i class="fa-brands fa-instagram fa-sm"></i> Instagram</a>
+                    <a href="#"> <i class="fa-brands fa-tiktok fa-sm"></i>TikTok</a>
+                    <a href="#"> <i class="fa-brands fa-facebook-f fa-sm"></i> Facebook</a>
+                    <a href="#"> <i class="fa-brands fa-twitter fa-sm"></i>Twitter</a>
+                    <a href="#">© 2000-2025 GSMArena.com</a>
+                    <a href="#">Mobile version</a>
+                    <a href="#">Android app</a>
+                    <a href="#">Tools</a>
+                    <a href="#">Contact us</a>
+                    <a href="#">Merch store</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms of use</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

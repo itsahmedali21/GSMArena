@@ -188,7 +188,6 @@ input:focus {
     font-size: 21px;
     letter-spacing: -1px;
     border: none;
-    padding: 5px 22px;
 }
 
 .support .col-md-4 .solid:hover {
@@ -204,7 +203,7 @@ input:focus {
     margin-left: -11px;
     font-size: 15px;
     font-weight: 500;
-    width: 90px;
+    width: 89px;
     text-align: center;
     color: #828383;
 }
@@ -256,20 +255,25 @@ input:focus {
     user-select: none;
 }
 
-.col-md-3.conjection-froud {
-    margin-left: -38px;
+.col-lg-4.conjection-froud {
+    /* margin-left: px; */
     margin-top: 2px;
 }
 
-.col-md-3.conjection-froud img {
-    width: 323px;
+.rounded {
+    width: -webkit-fill-available;
+}
+
+.col-lg-4.conjection-froud img {
+    width: 363px;
+    margin-left: 11px;
     height: 172px;
 }
 
-.col-md-3.conjection-froud h1,
+.col-lg-4.conjection-froud h1,
 .froud h1 {
     bottom: 72px;
-    left: 12px;
+    left: 25px;
     margin: 0;
     height: 20px;
     color: white;
@@ -303,18 +307,18 @@ input:focus {
 }
 
 .wanted img {
-    margin-left: -23px;
+    margin-left: -11px;
     width: 403px;
     height: 278px;
 }
 
 .froud {
-    margin-left: -31px;
+    margin-left: -17px;
 }
 
 .froud img {
-    width: 295px;
-    margin-left: -8px;
+    width: 350px;
+    margin-left: 5px;
     height: 140px;
 }
 
@@ -348,8 +352,9 @@ input:focus {
     border-left: 15px solid teal;
     border-radius: 5px;
     padding-bottom: 63px;
-    border-bottom: 1px solid grey;
+    margin-top: 6px;
     height: 69px;
+    margin-bottom: 4px;
 }
 
 .warently {
@@ -558,7 +563,7 @@ input:focus {
 }
 
 .sentizer-er {
-    border-right: 0.11px solid #ddd;
+    border-left: 0.11px solid #ddd;
 }
 
 .comfort-life {
@@ -594,13 +599,18 @@ input:focus {
     color: #5f5b5b;
     font-weight: 700;
     border: none;
-    padding: 1px 12px;
+    padding: 0px 12px 24px 9px;
     margin-left: 5px;
     background-color: #DEDBD4;
     font-size: 13px;
     height: 22px;
     border-radius: 4px;
     cursor: pointer;
+}
+
+.whitening {
+    font-size: 15px;
+    margin-left: 12px;
 }
 
 .mobiles-button:hover {
@@ -630,8 +640,9 @@ input:focus {
     background-color: #fff;
     overflow: hidden;
     transition: transform 0.3s ease;
-    margin-bottom: 14px;
-    width: 350px;
+    /* margin-bottom: 14px; */
+    margin-top: 12px;
+    width: 340px;
 }
 
 .review-card:hover {
@@ -640,7 +651,7 @@ input:focus {
 
 .review-card img {
     width: 100%;
-    height: auto;
+    height: 180px;
     display: block;
 }
 
@@ -1064,52 +1075,37 @@ table tr:hover {
     max-width: 600px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .volunteer {
-        width: 500px;
-    }
-
-    .comfort-life {
-        width: 100%;
-    }
-
-    .comfort-life {
-        display: none;
-    }
-
-    .wanted {
-        display: none;
-    }
-
-    body {
-        overflow-x: hidden;
-    }
-
-    .col-5 {
-        display: none;
-    }
-
-    .col-md-3.conjection-froud img {
-        width: auto;
-    }
-
-    .conjection-froud {
-        width: 20% !important;
-        margin-left: 0 !important;
-    }
-    
-    .comfort-life-zone {
-        display: none;
-    }
+.control-5 {
+    position: relative;
+    left: 40px;
 }
 
-@media (max-width: 991.98px) {
+@media screen and (max-width: 991.98px) {
     .desktop-navbar {
         display: none;
     }
 
+    .paragh-div {
+        padding: 0px;
+    }
+
+    .paragh-div p {
+        font-size: 9px;
+    }
+
+    .review-card img {
+        width: 85%;
+        height: 180px;
+        display: block;
+    }
+
     #leftMenu {
         width: 100%;
+    }
+
+    .container {
+        margin-left: 10px;
+        width: 93%;
     }
 }
 
@@ -1118,7 +1114,11 @@ table tr:hover {
     .central input {
         display: none;
     }
-    
+
+    .rounded {
+        width: auto;
+    }
+
     .warently {
         font-size: 1rem;
     }
@@ -1144,6 +1144,8 @@ table tr:hover {
     .paragh-div p {
         font-size: 8px;
     }
+
+
     .section-header td {
         background-color: #f5f5f5;
         font-weight: bold;
@@ -1166,7 +1168,7 @@ table tr:hover {
         width: 100%;
     }
 
-    .col-3.conjection-froud {
+    .col-4.conjection-froud {
         margin-left: 1px;
         margin-top: 2px;
     }
@@ -1309,19 +1311,25 @@ table tr:hover {
         max-width: 100%;
     }
 
-    .col-md-3.conjection-froud h1 {
+    .col-lg-4.conjection-froud h1 {
         font-size: 1.2rem;
     }
 
-    .col-md-3.conjection-froud img {
+    .container {
+        width: 99%;
+        margin-left: 2px;
+    }
+
+    .col-lg-4.conjection-froud img {
         width: 100%;
         margin-top: 12px;
+        margin-left: -6px;
     }
 
     .secondary {
         margin-left: 6px;
         margin: auto;
-        width: 92%;
+        width: 96%;
     }
 
     .crs {
