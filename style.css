@@ -437,6 +437,7 @@ input:focus {
     font-size: 11px;
     line-height: 15px;
     margin-left: 11px;
+
     opacity: 0.97;
     margin-top: -4px;
     color: #000000cf;
@@ -1089,6 +1090,15 @@ table tr:hover {
         width: 100%;
     }
 
+    .wanted-12 {
+        text-align: center;
+    }
+    .rounded{
+        margin: auto;
+        width: auto;
+        display: flex;
+    }
+
     .shrink {
         width: 164px;
         height: auto;
@@ -1159,10 +1169,7 @@ table tr:hover {
         width: 100%;
     }
 
-    .rounded {
-        width: auto;
-    }
-
+   
     .container {
         margin-left: 10px;
         width: 93%;
