@@ -1075,10 +1075,70 @@ table tr:hover {
     max-width: 600px;
 }
 
-.control-5 {
-    position: relative;
-    left: 40px;
+@media (min-width: 810px) and (max-width: 1024px) {
+    .col-lg-4.conjection-froud img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .col-md-4 .col-5 {
+        display: none;
+    }
+
+    .varasat .col-md-4 {
+        width: 100%;
+    }
+
+    .shrink {
+        width: 164px;
+        height: auto;
+        margin-top: 10px;
+    }
 }
+
+
+@media screen and (min-width: 768px) and (max-width: 800px) {
+    .volunteer {
+        width: 500px;
+    }
+
+    .comfort-life {
+        width: 100%;
+    }
+
+    .comfort-life {
+        display: none;
+    }
+
+    .wanted {
+        display: none;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .col-5 {
+        display: none;
+    }
+
+    /* 
+    .col-md-3.conjection-froud img {
+        width: auto;
+    } */
+
+    .conjection-froud {
+        width: 20% !important;
+        margin-left: 0 !important;
+    }
+
+
+
+    .comfort-life-zone {
+        display: none;
+    }
+}
+
 
 @media screen and (max-width: 991.98px) {
     .desktop-navbar {
@@ -1093,14 +1153,14 @@ table tr:hover {
         font-size: 9px;
     }
 
-    .review-card img {
-        width: 85%;
-        height: 180px;
-        display: block;
-    }
+
 
     #leftMenu {
         width: 100%;
+    }
+
+    .rounded {
+        width: auto;
     }
 
     .container {
