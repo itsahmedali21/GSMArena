@@ -96,7 +96,9 @@ span {
     display: block;
     height: 100%;
     width: 100%;
+    font-size: 17px;
     transition: all 0.3s ease;
+    letter-spacing: 0.59px;
 }
 
 .icon-container {
@@ -1079,9 +1081,11 @@ table tr:hover {
 .navbar button {
     border: none;
 }
-.nav-link:hover{
+
+.nav-link:hover {
     text-decoration: underline;
 }
+
 @media (min-width: 810px) and (max-width: 1024px) {
     .col-lg-4.conjection-froud img {
         width: 100%;
