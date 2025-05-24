@@ -1076,6 +1076,12 @@ table tr:hover {
     max-width: 600px;
 }
 
+.navbar button {
+    border: none;
+}
+.nav-link:hover{
+    text-decoration: underline;
+}
 @media (min-width: 810px) and (max-width: 1024px) {
     .col-lg-4.conjection-froud img {
         width: 100%;
@@ -1086,6 +1092,12 @@ table tr:hover {
         display: none;
     }
 
+    .shrink {
+        /* width: 100%; */
+        height: 134px;
+        margin-top: 10px;
+    }
+
     .varasat .col-md-4 {
         width: 100%;
     }
@@ -1093,19 +1105,14 @@ table tr:hover {
     .wanted-12 {
         text-align: center;
     }
-    .rounded{
+
+    .rounded {
         margin: auto;
         width: auto;
         display: flex;
     }
 
-    .shrink {
-        width: 164px;
-        height: auto;
-        margin-top: 10px;
-    }
 }
-
 
 @media screen and (min-width: 768px) and (max-width: 800px) {
     .volunteer {
@@ -1169,7 +1176,7 @@ table tr:hover {
         width: 100%;
     }
 
-   
+
     .container {
         margin-left: 10px;
         width: 93%;
