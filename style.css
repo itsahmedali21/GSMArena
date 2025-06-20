@@ -898,7 +898,6 @@ input:focus {
 
 input:hover {
     color: #3a2f2f;
-    border: 1px solid #3a2f2f;
 }
 
 .collapse .card-body {
