@@ -22,71 +22,78 @@
 </head>
 
 <body style="background-color: #EFEBE9;">
-    <div class="main-wrapper d-lg-inline d-none ">
-        <!-- Top Navbar -->
-        <nav class="navbar navbar-dark ">
-            <div class="container const  d-flex align-items-center justify-content-between">
-                <button class="navbar-toggler mb-2" type="button" onclick="toggleMenu()">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-    
-                <a class="navbar-brand d-flex align-items-center " href="#">
-                    <img src="imges/download.png" alt="GSMArena Logo" />
-                </a>
-                <div class="controvecy mb-2 ">
-                    <div class="icon-container">
-                        <button type="button" class="btn border-right" data-bs-toggle="tooltip" data-bs-placement="left"
-                            title="Tip Us">
-                            <img src="iccons/youtube-color-svgrepo-com.svg" alt="" width="30px">
-                        </button>
-    
-                        <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Tip Us">
-                            <img src="iccons/instagram-color-svgrepo-com.svg" alt="" width="22px">
-                        </button>
-                        <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Tip Us">
-                            <i class="fa-solid fa-wifi fa-lg" style="color: #ffffff;"></i>
-                        </button>
-                        <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="left">
-                            <i class="fa-solid fa-car fa-lg" style="color: #ffffff;"></i>
-                        </button>
-                        <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="left">
-                            <i class="fa-solid fa-cart-shopping fa-lg" style="color: #ffffff;"></i>
-                        </button>
-    
-                    </div>
+     <div di class="main-wrapper d-lg-inline d-none">
+    <!-- Top Navbar -->
+    <nav class="navbar navbar-dark">
+        <div class="container const d-flex align-items-center justify-content-between">
+            <button class="navbar-toggler mb-2" type="button" onclick="toggleMenu()">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="imges/download.png" alt="GSMArena Logo" />
+            </a>
+
+            <div class="controvecy mb-2">
+                <div class="icon-container">
+                    <button type="button" class="btn border-right" data-bs-toggle="tooltip" data-bs-placement="left" title="YouTube">
+                        <img src="iccons/youtube-color-svgrepo-com.svg" alt="YouTube" width="30px">
+                    </button>
+
+                    <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Instagram">
+                        <img src="iccons/instagram-color-svgrepo-com.svg" alt="Instagram" width="22px">
+                    </button>
+
+                    <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="left" title="WiFi">
+                        <i class="fa-solid fa-wifi fa-lg" style="color: #ffffff;"></i>
+                    </button>
+
+                    <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Car">
+                        <i class="fa-solid fa-car fa-lg" style="color: #ffffff;"></i>
+                    </button>
+
+                    <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Cart">
+                        <i class="fa-solid fa-cart-shopping fa-lg" style="color: #ffffff;"></i>
+                    </button>
                 </div>
-                <form action="" class="central d-flex align-items-center">
-                    <input type="text" class="no-focus-border" placeholder="Search">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="24" width="24" class="ms-2">
-                        <path fill="#ffffff"
-                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
-                    </svg>
-                </form>
-                <button type="button" class="btn mb-2 " data-bs-toggle="tooltip" data-bs-placement="left">
+            </div>
+
+            <form action="" class="central d-flex align-items-center">
+                <input type="text" class="no-focus-border" placeholder="Search">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="24" width="24" class="ms-2">
+                    <path fill="#ffffff"
+                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                </svg>
+            </form>
+
+            <div>
+                <button type="button" class="btn mb-2" data-bs-toggle="tooltip" data-bs-placement="left" title="Login">
                     <i class="fa-solid fa-right-to-bracket fa-lg" style="color: #ffffff;"></i>
                 </button>
-                <button type="button" class="btn mb-2 " data-bs-toggle="tooltip" data-bs-placement="left">
+
+                <button type="button" class="btn mb-2" data-bs-toggle="tooltip" data-bs-placement="left" title="Register">
                     <i class="fa-solid fa-user-plus fa-lg" style="color: #ffffff;"></i>
                 </button>
-        </nav>
-    
-        <!-- Left Menu -->
-        <div id="leftMenu" class="container show">
-            <div class="row">
-                <div class="col-12 d-flex align-items-center d-block">
-                    <a href="index.html" class="nav-link">Home</a>
-                    <a href="compare.html" class="nav-link">Campare</a>
-                    <a href="videos.html" class="nav-link">Videos</a>
-                    <a href="rewies.html" class="nav-link">Reviews</a>
-                    <a href="news.html" class="nav-link">News</a>
-                    <a href="featured.html" class="nav-link">Featured</a>
-                    <a href="phonefinder.html" class="nav-link">Phone Finder</a>
-                    <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div id="leftMenu" class="container show" >
+                <div class="row">
+                    <div class="col-12 d-flex flex-wrap align-items-center" style="column-gap: 70px;">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="compare.html" class="nav-link">Compare</a>
+                        <a href="videos.html" class="nav-link">Videos</a>
+                        <a href="rewies.html" class="nav-link">Reviews</a>
+                        <a href="news.html" class="nav-link">News</a>
+                        <a href="featured.html" class="nav-link">Featured</a>
+                        <a href="phonefinder.html" class="nav-link">Phone Finder</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </div>
                 </div>
             </div>
         </div>
-    
-    </div>
+    </nav>
+
+    <!-- Left Menu -->
+</div>
     <nav class="mobile-navbar d-lg-none d-flex justify-content-between  align-items-center">
     
         <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu"

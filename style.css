@@ -40,11 +40,12 @@ span {
 }
 
 .const {
-    background-color: #6D6D6D;
+    background-color: #1B2035;
     max-width: 1082px;
     height: 61px;
     margin-top: -8px;
     overflow-x: visible;
+
     white-space: nowrap;
 
 }
@@ -53,18 +54,19 @@ span {
     max-width: 1082px;
     /* z-index: 19; */
 }
-
 .navbar {
-    background-color: #9E9E9E;
+    background-color: #151a2dba;
     height: 60px;
     padding: 0.5rem 1rem;
-    position: fixed;
-    top: 0;
+    /* position: fixed;  */
+        top: 0;
     width: 100%;
     z-index: 1000;
     display: flex;
     align-items: center;
+    transition: top 0.3s ease-in-out; /* ✅ add this line */
 }
+
 
 .navbar-toggler {
     border: none !important;
@@ -95,7 +97,6 @@ span {
     position: relative;
     display: block;
     height: 100%;
-    width: 100%;
     font-size: 17px;
     transition: all 0.3s ease;
     letter-spacing: 0.59px;
@@ -179,13 +180,9 @@ input:focus {
     margin-left: 12px;
 }
 
-.support {
-    margin-top: 3.8rem;
-}
-
 .support .col-md-4 .solid {
-    margin-left: -12px;
-    background-color: #BBBBBB;
+    margin-left: -13px;
+    background-color: #090E21;
     color: white;
     font-size: 21px;
     letter-spacing: -1px;
@@ -218,11 +215,9 @@ input:focus {
 #leftMenu {
     display: none;
     background-color: #E0E0E0;
-    padding: 20px;
-    width: 100%;
     top: 60px;
-    position: sticky;
-    z-index: 9999;
+ 
+    margin-left: -13px;
 }
 
 
@@ -299,7 +294,6 @@ input:focus {
 
 .comfort h1 {
     background: dotted;
-    border: 1px solid do;
     position: absolute;
     bottom: 45px;
     left: 12px;
@@ -407,7 +401,7 @@ input:focus {
 }
 
 .highlight-12 {
-    background-color: #E8EFF6;
+    background-color: #bed4e9;
 }
 
 .canel h6 {
@@ -429,6 +423,7 @@ input:focus {
     vertical-align: middle;
     padding: 2px 8px;
 }
+
 
 .custom-table tbody tr.highlight {
     background-color: #E8F6E9;
