@@ -54,17 +54,19 @@ span {
     max-width: 1082px;
     /* z-index: 19; */
 }
+
 .navbar {
     background-color: #151a2dba;
     height: 60px;
     padding: 0.5rem 1rem;
-    /* position: fixed;  */
-        top: 0;
+    position: fixed;
+    top: 0;
     width: 100%;
     z-index: 1000;
     display: flex;
     align-items: center;
-    transition: top 0.3s ease-in-out; /* ✅ add this line */
+    transition: top 0.3s ease-in-out;
+    /* ✅ add this line */
 }
 
 
@@ -216,7 +218,7 @@ input:focus {
     display: none;
     background-color: #E0E0E0;
     top: 60px;
- 
+
     margin-left: -13px;
 }
 
@@ -286,6 +288,10 @@ input:focus {
     position: relative;
     width: 100%;
     max-width: 400px;
+}
+
+.support {
+    margin-top: 3.9rem;
 }
 
 .support .col-4 .solid:hover {
@@ -1080,6 +1086,10 @@ table tr:hover {
     text-decoration: underline;
 }
 
+.gap {
+    column-gap: 70px;
+}
+
 @media (min-width: 810px) and (max-width: 1024px) {
     .col-lg-4.conjection-froud img {
         width: 100%;
@@ -1112,48 +1122,16 @@ table tr:hover {
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 800px) {
-    .volunteer {
-        width: 500px;
+@media screen and (max-width:1047px) {
+
+    .devor button {
+        width: 27%;
+
     }
-
-    .comfort-life {
-        width: 100%;
-    }
-
-    .comfort-life {
-        display: none;
-    }
-
-    .wanted {
-        display: none;
-    }
-
-    body {
-        overflow-x: hidden;
-    }
-
-    .col-5 {
-        display: none;
-    }
-
-    /* 
-    .col-md-3.conjection-froud img {
-        width: auto;
-    } */
-
-    .conjection-froud {
-        width: 20% !important;
-        margin-left: 0 !important;
-    }
-
-
-
-    .comfort-life-zone {
-        display: none;
+    .gap{
+    column-gap: 60px;
     }
 }
-
 
 @media screen and (max-width: 991.98px) {
     .desktop-navbar {
@@ -1169,7 +1147,9 @@ table tr:hover {
     }
 
 
-
+.btn{
+    margin-right: 13px;
+}
     #leftMenu {
         width: 100%;
     }

@@ -6,19 +6,29 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 function toggleMenu() {
     document.getElementById("leftMenu").classList.toggle("show");
 }
-let lastScrollTop = 0;
-const navbar = document.getElementById("navbar");
+// let lastScrollTop = 0;
+// const navbar = document.getElementById("navbar");
 
-window.addEventListener("scroll", function () {
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+// window.addEventListener("scroll", function () {
+//     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    if (scrollTop > lastScrollTop) {
-        // Scroll Down - hide navbar
-        navbar.style.transform = "translateY(-100%)";
+//     if (scrollTop > lastScrollTop) {
+//         // Scroll Down - hide navbar
+//         navbar.style.transform = "translateY(-100%)";
+//     } else {
+//         // Scroll Up - show navbar
+//         navbar.style.transform = "translateY(0)";
+//     }
+
+//     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+// });
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
     } else {
-        // Scroll Up - show navbar
-        navbar.style.transform = "translateY(0)";
+        document.getElementById("navbar").style.top = "-130px";
     }
-
-    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-});
+    prevScrollpos = currentScrollPos;
+}
