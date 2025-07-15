@@ -1304,7 +1304,7 @@ flex-direction: column;
     }
 
     .colums-gap {
-        column-gap: 24px;
+        column-gap: 20px;
     }
 
     table td,
