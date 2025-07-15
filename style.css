@@ -4,7 +4,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: Arimo, sans-serif;
+    /* font-family: Arimo, sans-serif; */
     box-sizing: border-box;
 }
 
@@ -12,10 +12,9 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
-
-    font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-weight: weight;
+    font-family: "Arimo", sans-serif;
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
@@ -45,7 +44,6 @@ span {
     height: 61px;
     margin-top: -8px;
     overflow-x: visible;
-
     white-space: nowrap;
 
 }
@@ -82,26 +80,29 @@ span {
 }
 
 
-/* Left Menu - Initially hidden */
+
 #leftMenu {
     display: none;
     background-color: #E0E0E0;
     padding: 20px;
     width: 100%;
-    position: absolute;
-    top: 56px;
-    /* Directly below navbar */
-    /* left: 0; */
-    z-index: 999;
+    position: relative;
+    /* ✅ So it scrolls normally */
+    top: 0;
+    /* ✅ Remove any top offset */
+    z-index: 1;
+    /* ✅ Below navbar */
 }
 
+
 .nav-link {
+
+    font-family: "Oswald", sans-serif;
     position: relative;
     display: block;
-    height: 100%;
-    font-size: 17px;
-    transition: all 0.3s ease;
-    letter-spacing: 0.59px;
+    font-weight: 400;
+    color: #575757;
+    font-size: 19px;
 }
 
 .icon-container {
@@ -215,18 +216,34 @@ input:focus {
 }
 
 #leftMenu {
+    position: absolute;
+    top: 56px;
+}
+
+#leftMenu {
+    position: relative;
     display: none;
     background-color: #E0E0E0;
-    top: 60px;
-
-    margin-left: -13px;
+    /* padding: 6px; */
+    /* display: flex; */
+    margin-top: auto;
+    padding-top: 16px;
+    width: 100%;
+    padding-bottom: 16px;
 }
 
 
 #leftMenu.show {
+    /* position: absolute; */
     display: block;
+    top: 56px;
+    z-index: 999;
+
 }
 
+#leftMenu.hide {
+    display: none;
+}
 
 #content-wrapper {
     transition: margin-top 0.3s ease;
@@ -426,14 +443,17 @@ input:focus {
     border: none !important;
     height: 20px;
     font-size: 13px;
+    font-weight: 700;
     vertical-align: middle;
     padding: 2px 8px;
 }
 
 
 .custom-table tbody tr.highlight {
-    background-color: #E8F6E9;
+    background-color: #86b9b0;
     border: none;
+    color: white;
+    /* color: white; */
 }
 
 .wanted-12 {
@@ -502,7 +522,9 @@ input:focus {
 .mobile-menu {
     background-color: #333;
     color: white;
+    position: relative;
     padding: 15px;
+    z-index: 1000;
 }
 
 .mobile-menu a {
@@ -951,7 +973,6 @@ body {
 .d-flex {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
 }
 
 .buttons {
@@ -1058,6 +1079,10 @@ table tr:hover {
     background-color: #f0f0f0;
 }
 
+.colums-gap {
+    column-gap: 80px;
+}
+
 .western {
     font-size: 21px;
     margin: 21px 20px;
@@ -1090,6 +1115,54 @@ table tr:hover {
     column-gap: 70px;
 }
 
+.featured {
+    margin-top: 4rem;
+    width: 100%;
+    background-color: white;
+    padding-top: 20px;
+flex-direction: column;
+    display: none;
+
+}
+
+.featured-section {
+    height: 200px;
+    box-shadow: 0px 2px 4px #cfcfcf, #cfcfcf;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    display: flex;
+    overflow-x: scroll;
+    column-gap: 3rem;
+}
+
+.section {
+    font-weight: 700;
+    font-size: 1.2em;
+    margin: 20px 0 20px;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    color: #d50000;
+}
+
+.div-block {
+    width: 55%;
+}
+
+.div-block img {
+    border-radius: 5px;
+}
+
+.sony-tv {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    margin: 0px 0 0px 0px;
+    padding: 0px 0 5px 2px;
+    text-decoration: none;
+    padding: 10px 0 0;
+    border: none;
+    width: 100%;
+}
 @media (min-width: 810px) and (max-width: 1024px) {
     .col-lg-4.conjection-froud img {
         width: 100%;
@@ -1098,6 +1171,23 @@ table tr:hover {
 
     .col-md-4 .col-5 {
         display: none;
+    }
+
+    .featured {
+        display: flex;    
+        margin-top: 0px;
+            flex-direction: column;
+    }
+    .featured-section{
+        column-gap: 2rem;
+    }
+
+    #leftMenu.show {
+        /* position: absolute; */
+        display: block;
+        top: 0px;
+        z-index: 999;
+
     }
 
     .shrink {
@@ -1128,14 +1218,32 @@ table tr:hover {
         width: 27%;
 
     }
-    .gap{
-    column-gap: 60px;
+.support{
+    display: none;
+}
+    .featured {
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column  ;
+        padding-top: 20px;
+    }
+
+    .gap {
+        column-gap: 60px;
     }
 }
 
 @media screen and (max-width: 991.98px) {
     .desktop-navbar {
         display: none;
+    }
+
+    .nav-link {
+        font-size: 25px;
+    }
+
+    .colums-gap {
+        column-gap: 110px;
     }
 
     .paragh-div {
@@ -1147,17 +1255,24 @@ table tr:hover {
     }
 
 
-.btn{
-    margin-right: 13px;
-}
-    #leftMenu {
-        width: 100%;
+    .btn {
+        margin-right: 13px;
     }
 
+    #leftMenu {
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    #leftMenu {
+        /* position: absolute; */
+        top: -10px;
+        left: -5px;
+    }
 
     .container {
         margin-left: 10px;
-        width: 93%;
+        width: 100%;
     }
 }
 
@@ -1171,12 +1286,25 @@ table tr:hover {
         width: auto;
     }
 
+    .support {
+        display: none;
+        margin-top: 5.6rem;
+    }
+
+    .nav-link {
+        font-size: 17px;
+    }
+
     .warently {
         font-size: 1rem;
     }
 
     .comfort-life-zone img {
         width: 380px;
+    }
+
+    .colums-gap {
+        column-gap: 24px;
     }
 
     table td,
@@ -1246,10 +1374,9 @@ table tr:hover {
     }
 
     #leftMenu.show {
-        position: fixed;
-        /* top: 0; */
-        height: 76px;
-        /* margin-top: 37px; */
+        /* position: fixed; */
+        top: 0;
+        height: 75px;
     }
 
     .bobile {
@@ -1257,9 +1384,7 @@ table tr:hover {
     }
 
     #leftMenu.show a {
-        font-size: 11px;
-        margin-left: 12px;
-        display: contents;
+        font-size: 19px;
     }
 
     .review-card {

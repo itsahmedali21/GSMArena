@@ -24,12 +24,15 @@
 </head>
 
 <body style="background-color: #EFEBE9;">
-    <div  class="main-wrapper d-lg-inline d-none">
+    <!-- Desktop Navbar of Gsmarecn -->
+    <div class="main-wrapper">
         <!-- Top Navbar -->
-        <nav class="navbar navbar-dark" id="navbar">
+        <nav class="navbar navbar-dark  d-lg-inline d-none" id="navbar">
             <div class="container const d-flex align-items-center justify-content-between">
                 <button class="navbar-toggler mb-2" type="button" onclick="toggleMenu()">
-                    <span class="navbar-toggler-icon"></span>
+                    <img style="height: 40px;"
+                        src="https://cdn.prod.website-files.com/67f21c9d62aa4c4c685a7277/684091b39228b431a556d811_download-removebg-preview.png"
+                        alt="">
                 </button>
 
                 <a class="navbar-brand d-flex align-items-center" href="#">
@@ -83,33 +86,22 @@
                         <i class="fa-solid fa-user-plus fa-lg" style="color: #ffffff;"></i>
                     </button>
                 </div>
-                <div id="leftMenu" class="container show">
-                    <div class="row">
-                        <div class="col-12 d-flex flex-wrap align-items-center" style="column-gap: 70px;">
-                            <a href="index.html" class="nav-link">Home</a>
-                            <a href="compare.html" class="nav-link">Compare</a>
-                            <a href="videos.html" class="nav-link">Videos</a>
-                            <a href="rewies.html" class="nav-link">Reviews</a>
-                            <a href="news.html" class="nav-link">News</a>
-                            <a href="featured.html" class="nav-link">Featured</a>
-                            <a href="phonefinder.html" class="nav-link">Phone Finder</a>
-                            <a href="contact.html" class="nav-link">Contact</a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </nav>
 
-
     </div>
-
+    <!-- Mobile Navbar of Gsmarecn -->
     <nav id="navbar" class="mobile-navbar d-lg-none d-flex justify-content-between  align-items-center">
 
         <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu"
             aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <img style="height: 40px;"
+                src="https://cdn.prod.website-files.com/67f21c9d62aa4c4c685a7277/684091b39228b431a556d811_download-removebg-preview.png"
+                alt="">
         </button>
-        <a class="logo text-white " href="#">GSMArena</a>
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <a class="logo text-white " href="#">GSMArena</a>
+        </a>
         <div class="d-flex justify-content-end">
             <button type="button" class="btn float-end ml-5" data-bs-toggle="tooltip" data-bs-placement="left">
                 <i class="fa-solid fa-right-to-bracket fa-lg" style="color: #ffffff;"></i>
@@ -119,7 +111,7 @@
             </button>
         </div>
     </nav>
-
+    <!-- Mobile Collapse of Gsmarecn -->
     <div class="collapse mobile-menu d-lg-none" id="mobileMenu">
         <div class="menu-icons">
             <i class="fas fa-home"></i>
@@ -161,10 +153,66 @@
             <button class="btn btn-primary w-50">📲 My Phone</button>
         </div>
     </div>
+    <!-- Display Menu of Gsmarecn -->
+    <div id="leftMenu" class="container show">
+        <div class="row">
+            <div class="col-12 d-flex align-items-center   colums-gap">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="compare.html" class="nav-link">Compare</a>
+                <a href="videos.html" class="nav-link">Videos</a>
+                <a href="rewies.html" class="nav-link ">Reviews</a>
+                <a href="news.html" class="nav-link d-lg-block d-none">News</a>
+                <a href="featured.html" class="nav-link d-lg-block d-none">Featured</a>
+                <a href="phonefinder.html" class="nav-link d-lg-block d-none">Phone Finder</a>
+                <a href="contact.html" class="nav-link d-lg-block d-none">Contact</a>
+                <div style="background-color: #d50000; border-radius: 7px;" class="d-lg-none py-2"><svg
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="16" width="16" class="mx-3">
+                        <path fill="#ffffff"
+                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                    </svg></div>
+            </div>
+        </div>
+    </div>
+    <div class="container featured ">
+        <h2 class="section">Featured</h2>
+        <div class="featured-section">
+
+            <div class="div-block">
+                <img src="https://fdn.gsmarena.com/imgroot/news/25/07/sony-wh-1000-xm6-review/-184x111/gsmarena_100.jpg"
+                    alt="">
+                <h3 class="sony-tv">Sony WH-1000XM6 headphones review</h3>
+            </div>
+            <div class="div-block ">
+                <img src="https://fdn.gsmarena.com/imgroot/news/25/07/galaxy-watch8-ifr/-184x111/gsmarena_000.jpg"
+                    alt="">
+                <h3 class="sony-tv">Samsung Galaxy Watch8 in for review</h3>
+            </div>
+            <div class="div-block ">
+                <img src="https://fdn.gsmarena.com/imgroot/news/25/07/vivo-x-fold5-ifr/-184x111/gsmarena_000.jpg"
+                    alt="">
+                <h3 class="sony-tv">vivo X Fold5 in for review</h3>
+            </div>
+            <div class="div-block ">
+                <img src="https://fdn.gsmarena.com/imgroot/news/25/07/weekly-poll-samsung-galaxy-zfold7-zflip7-zflip7fe/-184x111/gsmarena_000.jpg"
+                    alt="">
+                <h3 class="sony-tv">Weekly poll: Samsung Galaxy Z Fold7, Z Flip7 or Z Flip7 FE?</h3>
+            </div>
+            <div class="div-block ">
+                <img src="https://fdn.gsmarena.com/imgroot/news/25/07/galaxy-watch8-classic-ifr/-184x111/gsmarena_000.jpg"
+                    alt="">
+                <h3 class="sony-tv">Samsung Galaxy Watch8 Classic in for review</h3>
+            </div>
+            <div class="div-block ">
+                <img src="https://fdn.gsmarena.com/imgroot/news/25/07/samsung-galaxy-z-flip7-ifr/-184x111/gsmarena_000.jpg"
+                    alt="">
+                <h3 class="sony-tv">Samsung Galaxy Z Flip7 in for review</h3>
+            </div>
+        </div>
+    </div>
     <div class="container support content-wrapper" id="Top">
         <div class="row">
-            <div class="col-lg-4 col-6 conjection-froud d-block d-md-inline col-5 d-none d-md-inline bobile">
-                <div class="review-column-list-item review-column-list-item-secondary">
+            <div class="col-lg-4 col-6 conjection-froud  bobile">
+                <div class="review-column-list-item review-column-list-item-secondary ">
                     <img class="review-list-item-image "
                         src="https://fdn.gsmarena.com/imgroot/reviews/25/motorola-moto-g-stylus-2025/-347x151/gsmarena_001.jpg"
                         alt="Moto G Stylus 5G (2025) review">
@@ -172,11 +220,11 @@
                     <h1>Mooto G Stylus 5G (2025) review</h1>
                     <img class="review-list-item-image"
                         src="https://fdn.gsmarena.com/imgroot/reviews/25/google-pixel-9a/-347x151/gsmarena_001.jpg"
-                        alt="Google Pixel 9a review">   
+                        alt="Google Pixel 9a review">
                     <h1>Google pIxel 9a Review</h1>
                 </div>
             </div>
-            <div class="col-6 col-lg-4 conjection-froud" style="margin-left: 7px;">
+            <div class="col-6 col-lg-4 conjection-froud " style="margin-left: 7px;">
                 <div class="comfort d-md-none d-block">
                     <div class="conjection position-absolute mx-2  my-2 ">
                         <i class="fa-solid fa-clock fa-sm" style="color: white;"></i>
@@ -252,27 +300,35 @@
                     Remor Mill</button>
             </div>
         </div>
-
-
     </div>
     <div class="container support mt-0 content-wrapper">
         <div class="row">
 
             <div class="col-5 col-md-4 froud">
-                <div class="review-column-list-item review-column-list-item-secondary">
-                    <img class="review-list-item-image " src="imges/download-3.jpeg"
+                 <div class="review-column-list-item review-column-list-item-secondary ">
+                    <img class="review-list-item-image "
+                        src="https://cdn.prod.website-files.com/67f21c9d62aa4c4c685a7277/6842d8cb8981edbf2586e945_gsmarena_003.jpg"
                         alt="Moto G Stylus 5G (2025) review">
 
-                    <img class="review-list-item-image " src="imges/download-5.jpeg" alt="Google Pixel 9a review">
+                    <h1>Vivo X200 Ultra Review</h1>
+                    <img class="review-list-item-image"
+                        src="https://cdn.prod.website-files.com/67f21c9d62aa4c4c685a7277/6842dabce1783a1cc5b2d945_vivo.jpg"
+                        alt="Google Pixel 9a review">
+                    <h1 style=" font-family: Instrument Sans, sans-serif;">Vivo X200 Ultra Review</h1>
                 </div>
             </div>
             <div class="col-5 col-md-4 froud" style="position: relative;
-            left: 20px;">
-                <div class="review-column-list-item review-column-list-item-secondary">
-                    <img class="review-list-item-image " src="imges/download-3.jpeg"
+            left: 20px;">   
+                  <div class="review-column-list-item review-column-list-item-secondary ">
+                    <img class="review-list-item-image "
+                        src="https://cdn.prod.website-files.com/67f21c9d62aa4c4c685a7277/6842d8cb8981edbf2586e945_gsmarena_003.jpg"
                         alt="Moto G Stylus 5G (2025) review">
 
-                    <img class="review-list-item-image " src="imges/download-5.jpeg" alt="Google Pixel 9a review">
+                    <h1>Nubia Z705 Ultra Review</h1>
+                    <img class="review-list-item-image"
+                        src="https://cdn.prod.website-files.com/67f21c9d62aa4c4c685a7277/6842dabce1783a1cc5b2d945_vivo.jpg"
+                        alt="Google Pixel 9a review">
+                    <h1>Vivo X200 Ultra Review</h1>
                 </div>
             </div>
             <div class="col-6 col-md-4" style="margin-left: 31px; position: relative; left: 12px;">
@@ -421,25 +477,35 @@
                 <h5 style="border-left: solid 5px grey ; color: #090E21;" class="px-3">Popular comparisons</h5>
 
                 <div class="sentizer bg-white mt-2 p-3 rounded shadow-sm" style="    text-transform: Uppercase;
-                                            font-size: 11px;
-                                            font-weight: 800;">
+                                            font-size: 13px;
+                                            font-weight: 700;">
                     <div class="row">
                         <div class="col-12">
-                            <p class="mb-2" style="background-color: #FFF2EE; color: #090E21;">Samsung Galaxy A55 vs.
+                            <p class="mb-2"
+                                style="background-color: #ffe6f0; color: #090E21; text-transform: capitalize;">Samsung
+                                Galaxy A55 vs.
                                 Galaxy A56</p>
-                            <p class="mb-2">Apple iPhone 16 Pro Max vs. Galaxy S25 Ultra</p>
-                            <p class="mb-2" style="background-color: #FFF2EE;">Samsung Galaxy S24 Ultra vs. Galaxy S25
+                            <p class="mb-2" style=" text-transform: capitalize;">Apple iPhone 16 Pro Max vs. Galaxy S25
                                 Ultra</p>
-                            <p class="mb-2">Samsung Galaxy A36 vs. Galaxy A56</p>
-                            <p class="mb-2" style="background-color: #FFF2EE;">Samsung Galaxy S24 FE vs. Galaxy A56</p>
-                            <p class="mb-2">Apple iPhone 13 vs. Apple iPhone 14</p>
-                            <p class="mb-2" style="background-color: #FFF2EE;">Samsung Galaxy S23 Ultra vs. Galaxy S24
+                            <p class="mb-2" style="background-color: #ffe6f0; text-transform: capitalize; ">Samsung
+                                Galaxy S24 Ultra vs. Galaxy S25
                                 Ultra</p>
-                            <p class="mb-2">Samsung Galaxy S24 vs. Galaxy S24 FE</p>
-                            <p class="mb-2" style="background-color: #FFF2EE;">Xiaomi Redmi Note 14 Pro+ vs.
+                            <p class="mb-2" style=" text-transform: capitalize;">Samsung Galaxy A36 vs. Galaxy A56</p>
+                            <p class="mb-2" style="background-color: #ffe6f0; text-transform: capitalize;">Samsung
+                                Galaxy S24 FE vs. Galaxy A56</p>
+                            <p class="mb-2" style=" text-transform: capitalize;">Apple iPhone 13 vs. Apple iPhone 14</p>
+                            <p class="mb-2" style="background-color: #ffe6f0;text-transform: capitalize;">Samsung Galaxy
+                                S23 Ultra vs. Galaxy S24
+                                Ultra</p>
+                            <p class="mb-2" style=" text-transform: capitalize;">Samsung Galaxy S24 vs. Galaxy S24 FE
+                            </p>
+                            <p class="mb-2" style="background-color: #ffe6f0;text-transform: capitalize;">Xiaomi Redmi
+                                Note 14 Pro+ vs.
                                 Redmi 14 Pro </p>
-                            <p class="mb-2">Apple iPhone 16 Pro Max vs. iPhone 16 Pro</p>
-                            <p class="mb-0" style="background-color: #FFF2EE;">Samsung Galaxy S24 vs. Galaxy S25</p>
+                            <p class="mb-2" style=" text-transform: capitalize;">Apple iPhone 16 Pro Max vs. iPhone 16
+                                Pro</p>
+                            <p class="mb-0" style="background-color: #ffe6f0;text-transform: capitalize;">Samsung Galaxy
+                                S24 vs. Galaxy S25</p>
                         </div>
                     </div>
                 </div>
@@ -758,10 +824,10 @@
                 <div class="center">
                     <table class="table table-sm custom-table">
                         <thead>
-                            <tr class="text-white " style="background-color: #A4C08D;">
-                                <th>#</th>
-                                <th>Devices</th>
-                                <th>Daily Hits</th>
+                            <tr style="background-color: #4c7273; color: white;">
+                                <th style="color: white;">#</th>
+                                <th style="color: white;">Devices</th>
+                                <th style="color: white;">Daily Hits</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -771,7 +837,7 @@
                                 <td class="text-end">29,819</td>
                             </tr>
                             <tr class="highlight">
-                                <th scope="row">2</th>
+                                <th scope="row" class="text-white">2</th>
                                 <td class="text-start">Xiaomi Redmi Turbo 4 Pro</td>
                                 <td class="text-end">27,589</td>
                             </tr>
@@ -781,7 +847,7 @@
                                 <td class="text-end">23,387</td>
                             </tr>
                             <tr class="highlight">
-                                <th scope="row">4</th>
+                                <th scope="row" class="text-white">4</th>
                                 <td class="text-start">Sony Xperia 1 VII 5G</td>
                                 <td class="text-end">20,008</td>
                             </tr>
@@ -790,8 +856,8 @@
                                 <td class="text-start">Xiaomi Poco X7 Pro</td>
                                 <td class="text-end">19,249</td>
                             </tr>
-                            <tr class="highlight">
-                                <th scope="row">6</th>
+                            <tr class="highlight"  class="text-white">
+                                <th scope="row" class="text-white">6</th>
                                 <td class="text-start">OnePlus 13T 5G</td>
                                 <td class="text-end">18,523</td>
                             </tr>
@@ -800,8 +866,8 @@
                                 <td class="text-start">Apple iPhone 16 Pro Max</td>
                                 <td class="text-end">17,800</td>
                             </tr>
-                            <tr class="highlight">
-                                <th scope="row">8</th>
+                            <tr class="highlight" class="text-white">
+                                <th scope="row" class="text-white">8</th>
                                 <td class="text-start">Nothing CMF Phone 2 Pro 5G</td>
                                 <td class="text-end">17,330</td>
                             </tr>
@@ -810,8 +876,8 @@
                                 <td class="text-start">Samsung Galaxy A36</td>
                                 <td class="text-end">16,592</td>
                             </tr>
-                            <tr class="highlight">
-                                <th scope="row">10</th>
+                            <tr class="highlight" >
+                                <th scope="row"class="text-white">10</th>
                                 <td class="text-start">Motorola Edge 60 Pro</td>
                                 <td class="text-end">16,433</td>
                             </tr>
@@ -997,7 +1063,7 @@
 
         </div>
     </div>
-    <div id="bottom" class="container d-flex" style="max-width: 1034px;">
+    <div id="bottom" class="container d-flex py-3" style="max-width: 1034px;">
         <div class="row align-items-center">
             <div class="col-md-2 m-auto col-4 d-flex justify-content-center align-items-center "> <img
                     src="https://fdn2.gsmarena.com/w/css/logo-gsmarena-com.png" alt="">

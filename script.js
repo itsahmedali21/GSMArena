@@ -3,9 +3,17 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
 });
 
-function toggleMenu() {
-    document.getElementById("leftMenu").classList.toggle("show");
-}
+
+    function toggleMenu() {
+        let menu = document.getElementById('leftMenu');
+        if (menu.style.display === 'block') {
+            menu.style.display = 'none';
+        } else {
+            menu.style.display = 'block';
+        }
+    }
+    
+
 // let lastScrollTop = 0;
 // const navbar = document.getElementById("navbar");
 
