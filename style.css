@@ -99,7 +99,7 @@ span {
     font-family: "Oswald", sans-serif;
     position: relative;
     display: block;
-    font-weight: 500;
+    font-weight: 400;
     text-transform: uppercase;
     color: #575757;
     font-size: 16px;
@@ -190,6 +190,7 @@ input:focus {
     font-size: 16px;
     letter-spacing: -1px;
     border: none;
+    font-weight: 700;
 }
 
 .support .col-md-4 .solid:hover {
