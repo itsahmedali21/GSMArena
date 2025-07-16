@@ -186,11 +186,13 @@ input:focus {
     margin-left: -13px;
     background-color: #090E21;
     color: white;
+
     text-transform: uppercase;
     font-size: 16px;
     letter-spacing: -1px;
     border: none;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 .support .col-md-4 .solid:hover {
@@ -203,11 +205,14 @@ input:focus {
 
 .devor button {
     border: none;
-    margin-left: -11px;
-    font-size: 15px;
-    font-weight: 500;
+    margin-left: -12px;
+    font-size: 14px;
+    font-weight: 400;
     width: 89px;
+    letter-spacing: -0.19px;
+    text-transform: uppercase;
     text-align: center;
+    font-family: "Oswald", sans-serif;
     color: #828383;
 }
 
