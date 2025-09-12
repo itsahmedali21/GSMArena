@@ -973,9 +973,8 @@ span {
 }
 
 .stat-item {
-    align-items: center;
     height: 98px;
-    width: 137px;
+    width: 131px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
