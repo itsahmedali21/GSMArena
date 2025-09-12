@@ -180,7 +180,7 @@
     .stat-item {
       align-items: center;
       height: 98px;
-      width: 137px;
+      width: 131px;
       justify-content: center;
       align-items: center;
       flex-direction: column;
@@ -194,18 +194,22 @@
       position: relative;
       z-index: 1;
     }
-/* Desktop (side by side) */
-.specs-table tr {
-  display: grid;
-  grid-template-columns: 200px 1fr; /* left fixed, right flexible */
-}
 
-/* Mobile (stack) */
-@media (max-width: 768px) {
-  .specs-table tr {
-    grid-template-columns: 1fr; /* single column */
-  }
-}
+    /* Desktop (side by side) */
+    .specs-table tr {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      /* left fixed, right flexible */
+    }
+
+    /* Mobile (stack) */
+    @media (max-width: 768px) {
+      .specs-table tr {
+        grid-template-columns: 1fr;
+        /* single column */
+      }
+    }
+
     .spec-title {
       font-weight: 400;
       font-family: 'oswald';
@@ -220,6 +224,11 @@
 
     .spec-item {
       padding: 20px;
+      display: flex;
+      row-gap: 8px;
+      flex-direction: column;
+      align-items: baseline;
+      justify-content: space-around;
     }
 
     .stat-item :nth-child(1) {
@@ -411,8 +420,7 @@
           <!-- Specs Row (aligned with image) -->
           <div class="row text-center g-0 d-lg-flex d-block  pt-2 specs-bar">
             <div class="col-3 spec-item">
-              <img src="/imges/rolling-removebg-preview.png" alt="">
-
+              <img src="imges/download-removebg-preview (1).png" alt="">
               <div class="spec-title"> 6.77"</div>
               <div class="spec-subtitle">1080x2392 px</div>
             </div>
@@ -503,7 +511,8 @@
 
     </div>
   </div>
-  <div class="container  d-lg-block d-none support content-wrapper" id="Top" style=" margin-top: 2rem; padding-left: 0;">
+  <div class="container  d-lg-block d-none support content-wrapper" id="Top"
+    style=" margin-top: 2rem; padding-left: 0;">
     <div class="row">
       <div class="col-md-8 ">
         <div class="card" role="region" aria-label="Vivo V60 Phone Info">
@@ -558,24 +567,25 @@
               <!-- Specs Row (aligned with image) -->
               <div class="row text-center g-0  pt-2 specs-bar">
                 <div class="col-3 spec-item">
-                  <img src="/imges/rolling-removebg-preview.png" alt="">
+                  <img src="imges/vrer.png" style="width: 25px;" alt="">
 
                   <div class="spec-title"> 6.77"</div>
                   <div class="spec-subtitle">1080x2392 px</div>
                 </div>
                 <div class="col-3 spec-item border-start">
-                  <img src="/imges/rolling-removebg-preview.png" alt="">
+                  <img src="imges/bett-removebg-preview.png" style="width: 35px;" alt="">
+
                   <div class="spec-title">50MP</div>
                   <div class="spec-subtitle">2160p</div>
                 </div>
                 <div class="col-3 spec-item border-start">
-                  <img src="/imges/rolling.jfif" alt="">
+                  <img src="imges/encypt-removebg-preview.png" style="width: 38px;" alt="">
 
                   <div class="spec-title">8-16GB</div>
-                  <div class="spec-subtitle">Snapdragon 7 Gen 4</div>
+                  <div class="spec-subtitle">Snapdragon 7</div>
                 </div>
                 <div class="col-3 spec-item border-start">
-                  <img src="/imges/rolling.jfif" alt="">
+                  <img src="imges/lowtry-removebg-preview.png" style="width: 35px;" alt="">
 
                   <div class="spec-title">6500mAh</div>
                   <div class="spec-subtitle">90W</div>
