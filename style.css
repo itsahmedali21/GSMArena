@@ -617,7 +617,7 @@ input:focus {
     height: 370px;
     overflow-y: auto;
     /* Corrected background image URL with encoded spaces and commas */
-    background: url("/imges/ever1.jpg") no-repeat center center;
+    background: url("imges/ever1.jpg") no-repeat center center;
     background-size: cover;
     position: relative;
     z-index: 0;
@@ -2421,4 +2421,8 @@ td {
         height: auto;
     }
 
+    .spec-label {
+        width: auto;
+        display: block;
+    }
 }
