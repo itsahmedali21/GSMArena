@@ -1226,7 +1226,7 @@ table tr:hover {
 }
 
 .flexiable:hover {
-    background-color: #d50000;
+    /* background-color: #d50000; */
     cursor: pointer;
 }
 
