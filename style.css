@@ -2216,6 +2216,19 @@ td {
         display: grid;
         grid-template-columns: repeat(2, 2fr);
     }
+    .spec-label{
+        font-size: 1rem;
+    }
+    strong{
+        font-size: 12px;
+    }
+    .table{
+        border: none;
+    }
+    .table th, .table td{
+        border: none;
+        /* padding: 4px 3px; */
+    }
 
     .center-img {
         width: -webkit-fill-available;
@@ -2230,4 +2243,6 @@ td {
         width: auto;
         display: block;
     }
+
+
 }
