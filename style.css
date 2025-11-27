@@ -184,7 +184,7 @@ input:focus {
 }
 
 .support .col-md-4 .solid {
-    margin-left: -13px;
+    /* margin-left: -13px; */
     background-color: #090E21;
     color: white;
 
@@ -202,18 +202,24 @@ input:focus {
 
 .devor {
     margin-left: 0;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+
 }
 
 .devor button {
     border: none;
-    margin-left: -12px;
-    font-size: 14px;
-    font-weight: 400;
-    width: 89px;
+    font-size: 12px;
+       font-weight: 500;
+    margin-top: -1px;
+    padding: 3px 0px;
     letter-spacing: -0.19px;
     text-transform: uppercase;
     text-align: center;
-    font-family: "Oswald", sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #828383;
 }
 
@@ -243,7 +249,7 @@ input:focus {
 #leftMenu.show {
     /* position: absolute; */
     display: block;
-    top: 56px;
+    /* top: 56px; */
     z-index: 999;
 
 }
@@ -1911,9 +1917,8 @@ td {
 
 @media screen and (max-width:1047px) {
 
-    .devor button {
-        width: 27%;
-
+      .article-info {
+        height: auto;
     }
 
     .support {
@@ -1942,7 +1947,7 @@ td {
     }
 
     .colums-gap {
-        column-gap: 110px;
+        column-gap: 80px;
     }
 
     .paragh-div {
