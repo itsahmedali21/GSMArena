@@ -1050,6 +1050,7 @@ input:hover {
     margin-bottom: 10px;
     background-color: #F3F3F3;
     padding: 5px;
+    overflow: hidden;
  
 }
 
@@ -1871,6 +1872,9 @@ td {
     .spec-item:last-child {
         border-bottom: none;
     }
+    .compare-checkbox input {
+    width: 138%;
+}
 }
 
 @media (min-width: 810px) and (max-width: 1024px) {
