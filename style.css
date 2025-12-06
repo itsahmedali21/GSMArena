@@ -1375,7 +1375,7 @@ table tr:hover {
 
 .featured-section {
     height: 200px;
-    box-shadow: 0px 2px 4px #cfcfcf, #cfcfcf;
+    /* box-shadow: 0px 2px 4px #cfcfcf, #cfcfcf; */
     padding-bottom: 5px;
     padding-left: 10px;
     display: flex;
