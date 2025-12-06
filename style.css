@@ -1166,6 +1166,7 @@ cubic-bezier(0.26, 0.695, 0.375, 0.965);
 .material-card, .top-shadow {
     /* box-shadow: 0px 2px 4px var(--color-card-shadow, #cfcfcf); */
     background-color: var(--color-card-background);
+    padding: 15px 0px;
 }
 
 
